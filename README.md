@@ -1,1 +1,2 @@
-# fuse-dev-docs
+# Initial page
+
