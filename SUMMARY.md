@@ -13,10 +13,11 @@
 
 * [How to become a validator](network/how-to-become-a-validator.md)
 * [FIP's](network/fips.md)
-* [Consensus](network/untitled.md)
+* [Fuse Consensus](network/untitled.md)
 
 ## Fuse Network Contracts <a id="bridges"></a>
 
+* [Fuse Token](bridges/fuse-token.md)
 * [Fuse Dollar](bridges/fuse-dollar.md)
 * [ETH ↔ Fuse Native Bridge](bridges/eth-fuse-native-bridge.md)
 * [ETH ↔ Fuse ERC20 Token Bridge](bridges/eth-fuse-erc20-bridge.md)
