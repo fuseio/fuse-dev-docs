@@ -8,7 +8,15 @@ Consensus is a fault-tolerant mechanism that is used in blockchain systems to ac
 
 
 
-## Contract Architecture
+![](../.gitbook/assets/image-5-.png)
+
+Consensus contract is used to manage the list of the network validators and delegators
+
+BlockReward contract is calculates the reward amount that validators and delegators will receive on each block validation. The reward size is proportional to validator's stake.
+
+With Voting contract validators are vote on various changes on these 3 base level contracts. All those contracts are proxied with implementation that handles the logic. The implementations can be changed only by the Voting process. 
+
+The bridge is used to transfer the Fuse native token between Fuse and Ethereum networks. 
 
 ## [Consensus - 0x3014ca10b91cb3d0ad85fef7a3cb95bcac9c0f79](https://explorer.fuse.io/address/0x3014ca10b91cb3d0ad85fef7a3cb95bcac9c0f79)
 
@@ -23,7 +31,7 @@ This contract is based on `non-reporting ValidatorSet` [described in Parity Wiki
 {% hint style="info" %}
 minimum stake amount = 100,000 Fuse token
 
-cycle duration blocks = 34560 \(approximately 2 hours\)
+cycle duration blocks = 34560 \(approximately 2 days\)
 {% endhint %}
 
 ## [Block Reward - 0x63D4efeD2e3dA070247bea3073BCaB896dFF6C9B](https://explorer.fuse.io/address/0x63d4efed2e3da070247bea3073bcab896dff6c9b)
