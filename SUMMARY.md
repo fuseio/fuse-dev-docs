@@ -5,7 +5,6 @@
 ## Fuse Services <a id="fuse-studio"></a>
 
 * [Fuse Studio](fuse-studio/v2-api.md)
-* [Subscription Service](fuse-studio/subscription-service.md)
 * [Subgraphs](fuse-studio/subgraphs.md)
 * [Fuseswap Service](fuse-studio/fuseswap-service.md)
 

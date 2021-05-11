@@ -8,7 +8,11 @@ It's about various backend services that available on the Fuse network. The serv
 
 ### Fuse Studio
 
-description
+Create and manage your economy using the Fuse Studio
+
+### Fuse Service
+
+Auxiliary service to get  prices and stats on the fuseswap DEX
 
 ### Fuse Subscription
 
