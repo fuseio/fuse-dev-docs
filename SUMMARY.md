@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Network Details](network-details.md)
+* [Using Metamask](using-metamask.md)
 
 ## Fuse Services <a id="fuse-studio"></a>
 

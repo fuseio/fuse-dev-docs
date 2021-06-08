@@ -1,6 +1,12 @@
 # Welcome
 
-Welcome to the development docs of the Fuse network. Let's go over the sections
+The **Fuse Network** is tailor-made for local communities and used to power day-to-day mobile payments for any person with a phone.
+
+It’s designed to be a very low-cost alternative to traditional cash or cashless payments. It lowers the barriers of entry for entrepreneurs to launch wallets, payments services, loyalty programs, and any other systems that were previously powered by paper.
+
+Fuse provides a new way to launch services and reach customers using mobile payments. It allows entrepreneurs to integrate everyday payments into their businesses. It reduces the cost to launch and operate non-custodial micro-finance and micro-transaction services. It leverages the powerful shared business processes that blockchains provide.
+
+Fuse lowers the bar of entry for entrepreneurs to build powerful, effective and sustainable products. So they spend less time and money on IT, and can focus on reaching and growing their clients and customers.
 
 ## Fuse Services
 
@@ -10,7 +16,7 @@ It's about various backend services that available on the Fuse network. The serv
 
 Create and manage your economy using the Fuse Studio
 
-### Fuse Service
+### FuseSwap Prices
 
 Auxiliary service to get  prices and stats on the fuseswap DEX
 
