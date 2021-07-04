@@ -19,11 +19,13 @@
 ## Fuse Network Contracts <a id="bridges"></a>
 
 * [Fuse Token](bridges/fuse-token.md)
+* [Bridges](bridges/bridges/README.md)
+  * [ETH ↔ Fuse ERC20 Token Bridge](bridges/bridges/eth-fuse-erc20-bridge.md)
+  * [BSC ↔ Fuse BNB Bridge](bridges/bridges/bsc-fuse-bnb-bridge.md)
+  * [BSC ↔ Fuse Native Bridge](bridges/bridges/bsc-fuse-native.md)
+  * [BSC  ↔ Fuse ERC20 Bridge](bridges/bridges/bsc-fuse-erc20-bridge.md)
+  * [ETH ↔ Fuse Native Bridge](bridges/bridges/eth-fuse-native-bridge.md)
 * [Fuse Dollar](bridges/fuse-dollar.md)
-* [ETH ↔ Fuse Native Bridge](bridges/eth-fuse-native-bridge.md)
-* [ETH ↔ Fuse ERC20 Token Bridge](bridges/eth-fuse-erc20-bridge.md)
-* [BSC ↔ Fuse Native](bridges/bsc-fuse-native.md)
-* [BSC  ↔ Fuse ERC20 Bridge](bridges/bsc-fuse-erc20-bridge.md)
 
 ## Fuse Wallet
 
