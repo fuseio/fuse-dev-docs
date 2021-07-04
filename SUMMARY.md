@@ -20,11 +20,12 @@
 
 * [Fuse Token](bridges/fuse-token.md)
 * [Bridges](bridges/bridges/README.md)
-  * [ETH ↔ Fuse ERC20 Token Bridge](bridges/bridges/eth-fuse-erc20-bridge.md)
-  * [BSC ↔ Fuse BNB Bridge](bridges/bridges/bsc-fuse-bnb-bridge.md)
-  * [BSC ↔ Fuse Native Bridge](bridges/bridges/bsc-fuse-native.md)
-  * [BSC  ↔ Fuse ERC20 Bridge](bridges/bridges/bsc-fuse-erc20-bridge.md)
-  * [ETH ↔ Fuse Native Bridge](bridges/bridges/eth-fuse-native-bridge.md)
+  * [Ethereum ↔ Fuse GoodDollar Token](bridges/bridges/ethereum-fuse-gooddollar-token.md)
+  * [Ethereum ↔ Fuse ERC20 Tokens](bridges/bridges/eth-fuse-erc20-bridge.md)
+  * [BSC ↔ Fuse BNB](bridges/bridges/bsc-fuse-bnb-bridge.md)
+  * [BSC ↔ Fuse Native](bridges/bridges/bsc-fuse-native.md)
+  * [BSC  ↔ Fuse ERC20](bridges/bridges/bsc-fuse-erc20-bridge.md)
+  * [Ethereum ↔ Fuse Native](bridges/bridges/eth-fuse-native-bridge.md)
 * [Fuse Dollar](bridges/fuse-dollar.md)
 
 ## Fuse Wallet

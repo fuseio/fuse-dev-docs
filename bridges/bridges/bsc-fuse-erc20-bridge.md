@@ -4,7 +4,7 @@ description: >-
   Binance Smart Chain networks.
 ---
 
-# BSC  ↔ Fuse ERC20 Bridge
+# BSC  ↔ Fuse ERC20
 
 ## Architecture Overview
 

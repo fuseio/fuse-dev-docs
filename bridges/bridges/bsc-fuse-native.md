@@ -4,7 +4,7 @@ description: >-
   Binance Smart Chain (BSC) networks
 ---
 
-# BSC ↔ Fuse Native Bridge
+# BSC ↔ Fuse Native
 
 ## Architecture Overview
 

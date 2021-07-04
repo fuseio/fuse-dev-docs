@@ -1,10 +1,10 @@
 ---
 description: >-
-  Fuse ERC20 bridge is used to relay the ERC20 tokens between Fuse and Ethereum
-  networks.
+  GoodDollar bridge is used to relay the GoodDollar tokens between Fuse and
+  Ethereum networks.
 ---
 
-# Ethereum ↔ Fuse ERC20 Tokens
+# Ethereum ↔ Fuse GoodDollar Token
 
 ## Architecture Overview
 
@@ -12,9 +12,13 @@ This bridge is two layer bridge. In the base level the  Arbitrary Message Bridge
 
 ## Contracts
 
-Home side of the bridge on the Fuse network: [0xc2220646E1E76D5fF3a441eDd9E8EFF0e4A8EF03](https://explorer.fuse.io/address/0xc2220646E1E76D5fF3a441eDd9E8EFF0e4A8EF03)
+Home side of the bridge on the Fuse network: [0xD39021DB018E2CAEadb4B2e6717D31550e7918D0](https://explorer.fuse.io/address/0xD39021DB018E2CAEadb4B2e6717D31550e7918D0/transactions)
 
-Foreign side of the bridge on the Ethereum network: [0xf301d525da003e874DF574BCdd309a6BF0535bb6](https://etherscan.io/address/0xf301d525da003e874DF574BCdd309a6BF0535bb6)
+Foreign side of the bridge on the Ethereum network: [0xD5D11eE582c8931F336fbcd135e98CEE4DB8CCB0](https://etherscan.io/address/0xD5D11eE582c8931F336fbcd135e98CEE4DB8CCB0)
+
+GoodDollar token on the Fuse network: [0x495d133b938596c9984d462f007b676bdc57ecec](https://explorer.fuse.io/address/0x495d133B938596C9984d462F007B676bDc57eCEC/transactions)
+
+GoodDollar token on the Ethereum network: [0x67c5870b4a41d4ebef24d2456547a03f1f3e094b](https://etherscan.io/address/0x67c5870b4a41d4ebef24d2456547a03f1f3e094b)
 
 Home side of the AMB bridge on the Fuse network: [0x2CA5411c4bf447Cc27CD6E6d1d046f922A27C399](https://explorer.fuse.io/address/0x2CA5411c4bf447Cc27CD6E6d1d046f922A27C399/transactions)
 
