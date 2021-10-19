@@ -8,7 +8,7 @@ description: >-
 
 ## Architecture Overview
 
-This bridge is two layer bridge. In the base level the Arbitrary Message Bridge \(AMB\) is responsible for relaying messages between the networks. On top of the AMB,  the pluggable mediators implement a contract logic of token relaying of various assets. More info [https://docs.tokenbridge.net/amb-bridge/about-amb-bridge](https://docs.tokenbridge.net/amb-bridge/about-amb-bridge)
+This bridge is two layer bridge. In the base level the Arbitrary Message Bridge (AMB) is responsible for relaying messages between the networks. On top of the AMB,  the pluggable mediators implement a contract logic of token relaying of various assets. More info [https://docs.tokenbridge.net/amb-bridge/about-amb-bridge](https://docs.tokenbridge.net/amb-bridge/about-amb-bridge)
 
 ## Contracts
 
@@ -34,10 +34,9 @@ Send native Fuse token to the home bridge contract. Then you receive an equal am
 
 To send token from the BSC network:
 
-1. Approve the Fuse ERC20 tokens to be spent by the Foreign ERC20 bridge. 
+1. Approve the Fuse ERC20 tokens to be spent by the Foreign ERC20 bridge.&#x20;
 2. Call relayTokens function on the bridge contract
 
 the `relayTokens` method will lock the ERC20 tokens on the foreign bridge. After a couple of confirmations, an equal amount of the Fuse ERC20 token will be released from the home bridge contract on BSC.
 
-#### 
-
+####

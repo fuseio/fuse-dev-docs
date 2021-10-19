@@ -34,7 +34,7 @@ Make sure to save the 'seed words' in the specific order they are shown, ideally
 
 [![](https://camo.githubusercontent.com/2909cb76521cec04316cf608b5761bc70ee943859f82a0f830dc7c4c015639a0/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f47716b307974554f327a66526b6a6a31586e57796250572d35485f70754c48414a5350706f4261695251372d444d6f3353594a6c526e62576a3538464f652d73627a7a6378734965714563734f36425537347668784674305f4f73556b374a497954646a44776570434f355a4e4264534c777943474a7063716255544b4c794b74395144386d7434)](https://camo.githubusercontent.com/2909cb76521cec04316cf608b5761bc70ee943859f82a0f830dc7c4c015639a0/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f47716b307974554f327a66526b6a6a31586e57796250572d35485f70754c48414a5350706f4261695251372d444d6f3353594a6c526e62576a3538464f652d73627a7a6378734965714563734f36425537347668784674305f4f73556b374a497954646a44776570434f355a4e4264534c777943474a7063716255544b4c794b74395144386d7434)
 
-**Step 3 -** Now let's **top up your wallet balance** by accessing the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/). To do so, copy your testnet account address by clicking on Metamask \(see picture below\) and paste it into the faucet, then click the 'send me test Ether' button.
+**Step 3 -** Now let's **top up your wallet balance** by accessing the [Ropsten Ethereum Faucet](https://faucet.ropsten.be). To do so, copy your testnet account address by clicking on Metamask (see picture below) and paste it into the faucet, then click the 'send me test Ether' button.
 
 {% hint style="info" %} It may take from 5-30 seconds for the balance to update, so don't worry if it doesn't arrive quickly, simply refresh the page. {% endhint %}
 
@@ -46,7 +46,7 @@ Make sure to save the 'seed words' in the specific order they are shown, ideally
 
 {% hint style="info" %} Paste the **wallet address** in the field and press **send me test Ether** {% endhint %}
 
-**Step 4 -** Congratulations! You now have Ropsten ETH to use! Now you can **access** the [Fuse studio](https://studio.fuse.io/) which you can also navigate to from the main page of the Fuse website. Once there, click on the **'connect wallet'** button, where you can choose to connect with either Metamask \(recommended\) or Torus. Press **connect with Metamask** and vualá!
+**Step 4 -** Congratulations! You now have Ropsten ETH to use! Now you can **access** the [Fuse studio](https://studio.fuse.io) which you can also navigate to from the main page of the Fuse website. Once there, click on the **'connect wallet'** button, where you can choose to connect with either Metamask (recommended) or Torus. Press **connect with Metamask** and vualá!
 
 [![](https://camo.githubusercontent.com/44b004dbfcec7e68ad0128ae3e3e5e541419d9ded751bbbe52516a967e9c1f83/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f30626f2d4a7853434d61334c50363668597a79414974565544485836426e6730704c5253435a3774376a427a53526f694153786a38774f766575706379346b6d5f3351354157514a685a595f4e656237484e684863335062794a674b584b76457377565a43507a5142482d79666c5f6266336e39636d77614a566b66796269746367397345495553)](https://camo.githubusercontent.com/44b004dbfcec7e68ad0128ae3e3e5e541419d9ded751bbbe52516a967e9c1f83/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f30626f2d4a7853434d61334c50363668597a79414974565544485836426e6730704c5253435a3774376a427a53526f694153786a38774f766575706379346b6d5f3351354157514a685a595f4e656237484e684863335062794a674b584b76457377565a43507a5142482d79666c5f6266336e39636d77614a566b66796269746367397345495553)
 
@@ -63,10 +63,10 @@ Make sure to save the 'seed words' in the specific order they are shown, ideally
 {% hint style="danger" %}
 
 * **Network name:** Fuse Network
-* **New RPC URL:** [\*\*\*\*https://rpc.fuse.io](https://rpc.fuse.io/)
+* **New RPC URL:** [\*\*\*\*https://rpc.fuse.io](https://rpc.fuse.io)
 * **ChainID:** 122
 * **Symbol:** FUSE
-* **Block Explorer URL:** [\*\*\*\*https://explorer.fuse.io](https://explorer.fuse.io/) {% endhint %}
+* **Block Explorer URL:** [\*\*\*\*https://explorer.fuse.io](https://explorer.fuse.io) {% endhint %}
 
 After doing so, **do not** **switch** to this new **custom network** just yet. It will be needed **after** you issue your community and tokens, inside the Fuse Studio.
 
@@ -80,13 +80,13 @@ Follow the tutorial in the next section of the walkthroughs called '**Community 
 
 ### Getting Started with Torus
 
-**Step 1 -** Visit the \*\*\*\*[**Torus**](https://app.tor.us/) \*\*\*\*website and **sign up** using your Google account.
+**Step 1 -** Visit the \*\*\*\*[**Torus**](https://app.tor.us) \*\*\*\*website and **sign up** using your Google account.
 
 **Step 2** **-** Next, switch to Ropsten Test Network by clicking on the 'Settings' section in your account and pick **Ropsten Test Network** in the 'Network' tab. You can also switch the network on the Fuse Studio main page by pressing the **wallet tab** and picking '**Switch to Ropsten network**', then clicking confirm.
 
 {% hint style="info" %} Remember, most actions involved with your community and wallet will incur fees which would be quite costly using ETH, so for this reason, we strongly recommend switching to the Ropsten Test Network which uses test ETH balance that can be used to pay for those fees instead. {% endhint %}
 
-**Step 3 -** Now let's **top up your wallet balance** by accessing the [Ropsten Ethereum Faucet](https://faucet.ropsten.be/). To do so, **copy** your wallet address by navigating \(see picture below\) it on the top right corner of your Torus account page, click '**copy to clipboard**', and **paste** the address into the Ropsten Ethereum Faucet search. After pasting the address, click '**Send me test Ether**'.
+**Step 3 -** Now let's **top up your wallet balance** by accessing the [Ropsten Ethereum Faucet](https://faucet.ropsten.be). To do so, **copy** your wallet address by navigating (see picture below) it on the top right corner of your Torus account page, click '**copy to clipboard**', and **paste** the address into the Ropsten Ethereum Faucet search. After pasting the address, click '**Send me test Ether**'.
 
 {% hint style="info" %} It may take from 5-30 seconds for the balance to update, so don't worry if it doesn't arrive quickly, simply refresh the page. {% endhint %}
 
@@ -98,7 +98,7 @@ Follow the tutorial in the next section of the walkthroughs called '**Community 
 
 {% hint style="info" %} Paste the **wallet address** in the field and press **send me test Ether** {% endhint %}
 
-**Step 4 -** Congratulations! You now have Ropsten ETH to use! Now you can **access** the [Fuse studio](https://studio.fuse.io/) which you can also navigate to from the main page of the Fuse website. Once there, click on the **'connect wallet'** button, where you can choose to connect with either Metamask \(recommended\) or Torus. Press **connect with Torus**.
+**Step 4 -** Congratulations! You now have Ropsten ETH to use! Now you can **access** the [Fuse studio](https://studio.fuse.io) which you can also navigate to from the main page of the Fuse website. Once there, click on the **'connect wallet'** button, where you can choose to connect with either Metamask (recommended) or Torus. Press **connect with Torus**.
 
 [![](https://camo.githubusercontent.com/44b004dbfcec7e68ad0128ae3e3e5e541419d9ded751bbbe52516a967e9c1f83/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f30626f2d4a7853434d61334c50363668597a79414974565544485836426e6730704c5253435a3774376a427a53526f694153786a38774f766575706379346b6d5f3351354157514a685a595f4e656237484e684863335062794a674b584b76457377565a43507a5142482d79666c5f6266336e39636d77614a566b66796269746367397345495553)](https://camo.githubusercontent.com/44b004dbfcec7e68ad0128ae3e3e5e541419d9ded751bbbe52516a967e9c1f83/68747470733a2f2f6c68352e676f6f676c6575736572636f6e74656e742e636f6d2f30626f2d4a7853434d61334c50363668597a79414974565544485836426e6730704c5253435a3774376a427a53526f694153786a38774f766575706379346b6d5f3351354157514a685a595f4e656237484e684863335062794a674b584b76457377565a43507a5142482d79666c5f6266336e39636d77614a566b66796269746367397345495553)
 
@@ -111,7 +111,7 @@ Follow the tutorial in the next section of the walkthroughs called '**Community 
 {% hint style="danger" %}
 
 * **Network name:** Fuse Network
-* **New RPC URL:** [\*\*\*\*https://rpc.fuse.io](https://rpc.fuse.io/)
+* **New RPC URL:** [\*\*\*\*https://rpc.fuse.io](https://rpc.fuse.io)
 * **ChainID:** 122 {% endhint %}
 
 Make sure to have the network settings on '**Ropsten Test Network'** for testing purposes or **Main Ethereum Network** when you are ready to launch an official community. You will only need to change to the new RPC Network **after** you have created your community to perform actions on the Fuse Studio.
@@ -121,4 +121,3 @@ Make sure to have the network settings on '**Ropsten Test Network'** for testing
 [![](https://camo.githubusercontent.com/24e2242b11dac635de8efc93ebd32bda5167a0cd9c0a619bfd320b66ce16f8d6/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f653253676d39584349667872747444785f4e6b47697956312d7045345351486a78435a5f614953553272416475734d4a75504b62457172414e68516e676f6941426f5861555764537a3034364f54797a39666e4d49314145365a6f3852324473583331665a3733455f6e332d6248536b436a6d4149764170542d565565367a37477474755f4a5965)](https://camo.githubusercontent.com/24e2242b11dac635de8efc93ebd32bda5167a0cd9c0a619bfd320b66ce16f8d6/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f653253676d39584349667872747444785f4e6b47697956312d7045345351486a78435a5f614953553272416475734d4a75504b62457172414e68516e676f6941426f5861555764537a3034364f54797a39666e4d49314145365a6f3852324473583331665a3733455f6e332d6248536b436a6d4149764170542d565565367a37477474755f4a5965)
 
 Follow the tutorial in the next section of the walkthroughs called '**Community Creation Tutorial**'.
-

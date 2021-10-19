@@ -4,19 +4,19 @@ description: An overview of the network's consensus contracts
 
 # Fuse Consensus
 
-Consensus is a fault-tolerant mechanism that is used in blockchain systems to achieve the necessary agreement on the single state of the network. Fuse network is using a [Delegated Proof of Stake](https://en.bitcoinwiki.org/wiki/DPoS) \(DPoS\) consensus model. DPoS is a variation of [Proof of Stake](https://en.bitcoinwiki.org/wiki/Proof-of-stake) consensus. In PoS there are a set of validators that are responsible for keeping the network updated and validating the network's state. They do this in turns, every validator has their turn in line. On their turn the validator updates the network's state, and the rest of the validators check that the update is valid.
+Consensus is a fault-tolerant mechanism that is used in blockchain systems to achieve the necessary agreement on the single state of the network. Fuse network is using a [Delegated Proof of Stake](https://en.bitcoinwiki.org/wiki/DPoS) (DPoS) consensus model. DPoS is a variation of [Proof of Stake](https://en.bitcoinwiki.org/wiki/Proof-of-stake) consensus. In PoS there are a set of validators that are responsible for keeping the network updated and validating the network's state. They do this in turns, every validator has their turn in line. On their turn the validator updates the network's state, and the rest of the validators check that the update is valid.
 
 
 
-![](../.gitbook/assets/image-5-.png)
+![](<../.gitbook/assets/image (5).png>)
 
 Consensus contract is used to manage the list of the network validators and delegators
 
 BlockReward contract is calculates the reward amount that validators and delegators will receive on each block validation. The reward size is proportional to validator's stake.
 
-With Voting contract validators are vote on various changes on these 3 base level contracts. All those contracts are proxied with implementation that handles the logic. The implementations can be changed only by the Voting process. 
+With Voting contract validators are vote on various changes on these 3 base level contracts. All those contracts are proxied with implementation that handles the logic. The implementations can be changed only by the Voting process.&#x20;
 
-The bridge is used to transfer the Fuse native token between Fuse and Ethereum networks. 
+The bridge is used to transfer the Fuse native token between Fuse and Ethereum networks.&#x20;
 
 ## [Consensus - 0x3014ca10b91cb3d0ad85fef7a3cb95bcac9c0f79](https://explorer.fuse.io/address/0x3014ca10b91cb3d0ad85fef7a3cb95bcac9c0f79)
 
@@ -31,12 +31,12 @@ This contract is based on `non-reporting ValidatorSet` [described in Parity Wiki
 {% hint style="info" %}
 minimum stake amount = 100,000 Fuse token
 
-cycle duration blocks = 34560 \(approximately 2 days\)
+cycle duration blocks = 34560 (approximately 2 days)
 {% endhint %}
 
 ## [Block Reward - 0x63D4efeD2e3dA070247bea3073BCaB896dFF6C9B](https://explorer.fuse.io/address/0x63d4efed2e3da070247bea3073bcab896dff6c9b)
 
-This contract is responsible for generating and distributing block rewards to the network validators according to the network specs \(5% yearly inflation\).
+This contract is responsible for generating and distributing block rewards to the network validators according to the network specs (5% yearly inflation).
 
 Another role of this contract is to call the snapshot/cycle logic on the Consensus contract
 
@@ -55,14 +55,12 @@ max number of open ballots = 100
 
 max number of open ballots per validator = 100 / number of validators
 
-minimum ballot duration \(cycles\) = 2
+minimum ballot duration (cycles) = 2
 
-maximum ballot duration \(cycles\) = 14
+maximum ballot duration (cycles) = 14
 {% endhint %}
 
 ## [Proxy Storage](https://explorer.fuse.io/address/0x23D8634ED1B2662dC96FcE6208fde93258731333)
 
-This contract is responsible for holding network contracts implementation addresses and upgrading them if necessary \(via voting\).
-
-
+This contract is responsible for holding network contracts implementation addresses and upgrading them if necessary (via voting).
 

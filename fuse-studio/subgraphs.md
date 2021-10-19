@@ -8,7 +8,7 @@ description: >-
 
 ## Deploying your own subgraph
 
-TheGraph, a decentralized protocol for indexing and querying chain data, supports the Fuse Netork.Go to [https://thegraph.com/](https://thegraph.com/) to sign up and create your subgraph.
+TheGraph, a decentralized protocol for indexing and querying chain data, supports the Fuse Netork.Go to [https://thegraph.com/](https://thegraph.com) to sign up and create your subgraph.
 
 * Follow the instructions for how to deploy the subgraph
 * in `subgraph.yaml`, the network name should be `fuse`
@@ -50,4 +50,3 @@ on Fuse graph-node:  [https://graph.fuse.io/subgraphs/name/fuseio/fuse-entities/
 List of tokens bridged to the Fuse network.
 
 on Fuse graph-node: [https://graph.fuse.io/subgraphs/name/fuseio/fuse-ethereum-bridge/graphql](https://graph.fuse.io/subgraphs/name/fuseio/fuse-ethereum-bridge/graphql)
-

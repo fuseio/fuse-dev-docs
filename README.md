@@ -41,5 +41,3 @@ Allows to subscribe to token balances changes on the Fuse network. Currently res
 
 * Learn how to run the wallet and customize by forking
 
-
-

@@ -8,7 +8,7 @@ description: >-
 
 ## Architecture Overview
 
-This bridge is two layer bridge. In the base level the Arbitrary Message Bridge \(AMB\) is responsible for relaying messages between the networks. On top of the AMB,  the pluggable mediators implement a contract logic of token relaying of various assets. More info [https://docs.tokenbridge.net/amb-bridge/about-amb-bridge](https://docs.tokenbridge.net/amb-bridge/about-amb-bridge)
+This bridge is two layer bridge. In the base level the Arbitrary Message Bridge (AMB) is responsible for relaying messages between the networks. On top of the AMB,  the pluggable mediators implement a contract logic of token relaying of various assets. More info [https://docs.tokenbridge.net/amb-bridge/about-amb-bridge](https://docs.tokenbridge.net/amb-bridge/about-amb-bridge)
 
 The contract is called an "inverse-native" bridge, because the home and foreign network are inversed. In that case Fuse network is foreign and BSC is the home network.
 
@@ -36,10 +36,9 @@ Send native BNB token to the home bridge contract. Then you receive an equal amo
 
 To send token from the Fuse network:
 
-1. Approve the "BNB on Fuse" ERC20 token to be spent by the Foreign bridge. 
+1. Approve the "BNB on Fuse" ERC20 token to be spent by the Foreign bridge.&#x20;
 2. Call relayTokens function on the bridge contract
 
 the `relayTokens` method will lock the ERC20 tokens on the foreign bridge. After a couple of confirmations, an equal amount of the BNB native token will be released from the home bridge contract on BSC.
 
-#### 
-
+####

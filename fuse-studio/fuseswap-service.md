@@ -12,21 +12,21 @@ The Fuseswap Backend REST API is used for generating trading data for frontend c
 
 [Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
 
-```text
+```
 GET /pricechange
 ```
 
 #### Parameter Parameters
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name         | Type     | Description          |
+| ------------ | -------- | -------------------- |
 | tokenAddress | `String` | The currency address |
 
 #### Success Response
 
 Success-Response:
 
-```text
+```
 
 {
     "data": {
@@ -39,32 +39,32 @@ Success-Response:
 
 #### Success 200
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| priceChange | `String` | The price change ratio of the token |
-| currentPrice | `String` | The current price of the token |
-| previousPrice | `String` | The previous price of the token |
+| Name          | Type     | Description                         |
+| ------------- | -------- | ----------------------------------- |
+| priceChange   | `String` | The price change ratio of the token |
+| currentPrice  | `String` | The current price of the token      |
+| previousPrice | `String` | The previous price of the token     |
 
 ### Get price change for token over time duration
 
 [Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
 
-```text
+```
 POST /pricechange
 ```
 
 #### Parameter Parameters
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| tokenAddress | `String` | The currency address |
-| duration | `Object` | The duration object to calculate the price change over the timeframe duration should be passed as an object according to [https://day.js.org/docs/en/durations/creating](https://day.js.org/docs/en/durations/creating) for example duration of {days: 1} means a duration of one day |
+| Name         | Type     | Description                                                                                                                                                                                                                                                                           |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tokenAddress | `String` | The currency address                                                                                                                                                                                                                                                                  |
+| duration     | `Object` | The duration object to calculate the price change over the timeframe duration should be passed as an object according to [https://day.js.org/docs/en/durations/creating](https://day.js.org/docs/en/durations/creating) for example duration of {days: 1} means a duration of one day |
 
 #### Success Response
 
 Success-Response:
 
-```text
+```
 
 {
     "data": {
@@ -77,11 +77,11 @@ Success-Response:
 
 #### Success 200
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| priceChange | `String` | The price change ratio of the token |
-| currentPrice | `String` | The current price of the token |
-| previousPrice | `Object` | The previous price of the token |
+| Name          | Type     | Description                         |
+| ------------- | -------- | ----------------------------------- |
+| priceChange   | `String` | The price change ratio of the token |
+| currentPrice  | `String` | The current price of the token      |
+| previousPrice | `Object` | The previous price of the token     |
 
 ## Price
 
@@ -89,21 +89,21 @@ Success-Response:
 
 [Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
 
-```text
+```
 GET /price
 ```
 
 #### Parameter Parameters
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name         | Type     | Description          |
+| ------------ | -------- | -------------------- |
 | tokenAddress | `String` | The currency address |
 
 #### Success Response
 
 Success-Response:
 
-```text
+```
 
 {
  "data": {
@@ -114,8 +114,8 @@ Success-Response:
 
 #### Success 200
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name  | Type     | Description            |
+| ----- | -------- | ---------------------- |
 | price | `Number` | The price of the token |
 
 ## Stats
@@ -124,22 +124,22 @@ Success-Response:
 
 [Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
 
-```text
+```
 GET /stats/:tokenAddress?=limit={limit}
 ```
 
 #### Parameter Parameters
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| tokenAddress | `String` | The currency address |
-| limit | `String` | The number of days to return statistics for \(query param\) |
+| Name         | Type     | Description                                               |
+| ------------ | -------- | --------------------------------------------------------- |
+| tokenAddress | `String` | The currency address                                      |
+| limit        | `String` | The number of days to return statistics for (query param) |
 
 #### Success Response
 
 Success-Response:
 
-```text
+```
 
 {
  "data": [
@@ -155,8 +155,8 @@ Success-Response:
 
 #### Success 200
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name  | Type       | Description                               |
+| ----- | ---------- | ----------------------------------------- |
 | array | `Object[]` | of token stats objects, see example below |
 
 ## Swap
@@ -165,23 +165,23 @@ Success-Response:
 
 [Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
 
-```text
+```
 POST /swap/quote
 ```
 
 #### Parameter Parameters
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| currencyIn | `String` | The currency to spend |
+| Name        | Type     | Description                      |
+| ----------- | -------- | -------------------------------- |
+| currencyIn  | `String` | The currency to spend            |
 | currencyOut | `String` | The desired currency out address |
-| inputAmount | `String` | The desired amount to spend |
+| inputAmount | `String` | The desired amount to spend      |
 
 #### Success Response
 
 Success-Response:
 
-```text
+```
 
 {
     "data": {
@@ -618,88 +618,35 @@ Success-Response:
 
 #### Success 200
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| info | `Object` | Simplied quote object containing information about the trade |
+| Name  | Type     | Description                                                                                                |
+| ----- | -------- | ---------------------------------------------------------------------------------------------------------- |
+| info  | `Object` | Simplied quote object containing information about the trade                                               |
 | trade | `Object` | The trade object containing information about the [trade](https://uniswap.org/docs/v2/SDK/trade) e.g price |
 
 ### Create swap parameters for a Trade
 
 [Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
 
-```text
+```
 POST /swap/swapcallparameters
 ```
 
 #### Parameter Parameters
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">currencyIn</td>
-      <td style="text-align:left"><code>String</code>
-      </td>
-      <td style="text-align:left">The currency to spend</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">currencyOut</td>
-      <td style="text-align:left"><code>String</code>
-      </td>
-      <td style="text-align:left">The desired currency out address</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">inputAmount</td>
-      <td style="text-align:left"><code>String</code>
-      </td>
-      <td style="text-align:left">The desired amount to spend</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">recipient</td>
-      <td style="text-align:left"><code>string</code>
-      </td>
-      <td style="text-align:left">The address that should receive the output of the swap</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">allowedSlippage</td>
-      <td style="text-align:left"><code>Number</code>
-      </td>
-      <td style="text-align:left">
-        <p><b>optional</b>
-        </p>
-        <p>How much the execution price is allowed to move unfavorably from the trade
-          execution price in Basis Points(BIPS)<em>Default value: 50</em>
-          <br />
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">ttl</td>
-      <td style="text-align:left"><code>Number</code>
-      </td>
-      <td style="text-align:left">
-        <p><b>optional</b>
-        </p>
-        <p>How long the swap is valid until it expires in seconds<em>Default value: 1200</em>
-          <br
-          />
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Name            | Type     | Description                                                                                                                                                                           |
+| --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| currencyIn      | `String` | The currency to spend                                                                                                                                                                 |
+| currencyOut     | `String` | The desired currency out address                                                                                                                                                      |
+| inputAmount     | `String` | The desired amount to spend                                                                                                                                                           |
+| recipient       | `string` | The address that should receive the output of the swap                                                                                                                                |
+| allowedSlippage | `Number` | <p><strong>optional</strong></p><p>How much the execution price is allowed to move unfavorably from the trade execution price in Basis Points(BIPS)<em>Default value: 50</em><br></p> |
+| ttl             | `Number` | <p><strong>optional</strong></p><p>How long the swap is valid until it expires in seconds<em>Default value: 1200</em><br></p>                                                         |
 
 #### Success Response
 
 Success-Response:
 
-```text
+```
 {
      "methodName": "swapExactETHForTokens",
      "args": [
@@ -726,10 +673,9 @@ Success-Response:
 
 #### Success 200
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| methodName | `String` | The method to call on Fuseswap RouterV2 |
-| args | `String[]` | The arguments to pass to the method, all hex encoded |
-| value | `String` | The amount of wei to send in hex |
-| rawTxn | `Object` | Unsigned transaction which represents the transaction that needs to be signed and submitted to the network |
-
+| Name       | Type       | Description                                                                                                |
+| ---------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
+| methodName | `String`   | The method to call on Fuseswap RouterV2                                                                    |
+| args       | `String[]` | The arguments to pass to the method, all hex encoded                                                       |
+| value      | `String`   | The amount of wei to send in hex                                                                           |
+| rawTxn     | `Object`   | Unsigned transaction which represents the transaction that needs to be signed and submitted to the network |

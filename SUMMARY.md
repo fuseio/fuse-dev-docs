@@ -2,13 +2,17 @@
 
 * [Welcome](README.md)
 * [Network Details](network-details.md)
+* [Developer Resources & Tools](developer-resources-and-tools.md)
 * [Using Metamask](using-metamask.md)
 
-## Fuse Services <a id="fuse-studio"></a>
+## Fuse Services <a href="fuse-studio" id="fuse-studio"></a>
 
 * [Fuse Studio](fuse-studio/v2-api.md)
 * [Subgraphs](fuse-studio/subgraphs.md)
 * [Fuseswap Service](fuse-studio/fuseswap-service.md)
+* [Earn SDK](fuse-studio/earn-sdk/README.md)
+  * [SingleRewardProgram](fuse-studio/earn-sdk/singlerewardprogram.md)
+  * [MultiRewardProgram](fuse-studio/earn-sdk/multirewardprogram.md)
 
 ## Network
 
@@ -16,7 +20,7 @@
 * [FIP's](network/fips.md)
 * [Fuse Consensus](network/untitled.md)
 
-## Fuse Network Contracts <a id="bridges"></a>
+## Fuse Network Contracts <a href="bridges" id="bridges"></a>
 
 * [Fuse Token](bridges/fuse-token.md)
 * [Bridges](bridges/bridges/README.md)
@@ -31,4 +35,3 @@
 ## Fuse Wallet
 
 * [Getting Started](fuse-wallet/getting-started.md)
-

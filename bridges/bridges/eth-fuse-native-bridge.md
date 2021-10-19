@@ -26,5 +26,4 @@ On Fuse Network you send native Fuse token to the home bridge contract. Then you
 
 On Ethereum network you transfer the Fuse token to the foreign bridge contract. After a couple of confirmations, you will receive equal amount of the Fuse native token, sent from the home bridge contract.
 
-#### 
-
+####
