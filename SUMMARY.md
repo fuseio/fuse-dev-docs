@@ -39,6 +39,7 @@
   * [BSC  ↔ Fuse ERC20](bridges/bridges/bsc-fuse-erc20-bridge.md)
   * [Ethereum ↔ Fuse Native](bridges/bridges/eth-fuse-native-bridge.md)
 * [Fuse Dollar](bridges/fuse-dollar.md)
+* [Major Deployed Contracts](bridges/major-deployed-contracts.md)
 
 ## Fuse Wallet
 
