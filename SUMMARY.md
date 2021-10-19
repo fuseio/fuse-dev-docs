@@ -21,7 +21,9 @@
   * [Getting started as a validator](network/how-to-become-a-validator/getting-started-as-a-validator.md)
   * [Getting started as a validator on the Spark testnet](network/how-to-become-a-validator/getting-started-as-a-validator-on-the-spark-testnet.md)
 * [FIP's](network/fips.md)
-* [Fuse Consensus](network/untitled.md)
+* [Fuse Consensus](network/untitled/README.md)
+  * [Contracts Overview](network/untitled/contracts-overview.md)
+  * [Stake, Delegate and Withdraw](network/untitled/stake-delegate-and-withdraw.md)
 
 ## Fuse Network Contracts <a href="bridges" id="bridges"></a>
 
