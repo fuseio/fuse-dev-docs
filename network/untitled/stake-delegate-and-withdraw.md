@@ -19,9 +19,9 @@ Fuse token holders who don't want to run a node by themselves but still wish to 
 
 Delegating is done by calling the \`delegate\` function on the [consensus contract](https://explorer.fuse.io/address/0x3014ca10b91cb3d0ad85fef7a3cb95bcac9c0f79) with the validator address as data (see screenshot from MEW).
 
-![delegate](../../.gitbook/assets/image.png)
+![delegate](<../../.gitbook/assets/image (1).png>)
 
-Withdraw
+## Withdraw
 
 Both stakers and validators can withdraw their Fuse tokens, up to the staked/delegated amount, at any time. The withdrawn amount will be deducted from the validator stake amount, and if the stake amount becomes below the minimum stake amount - the validator will be removed from the Fuse chain validators list.
 
@@ -30,6 +30,6 @@ There are two options to withdraw:
 1. Call the \`withdraw\` function on the [consensus contract](https://explorer.fuse.io/address/0x3014ca10b91cb3d0ad85fef7a3cb95bcac9c0f79) with one parameter - the amount to withdraw. This call is for stakers, and will reduce the stake amount of the sender address.
 2. Call the \`withdraw\` function on the [consensus contract](https://explorer.fuse.io/address/0x3014ca10b91cb3d0ad85fef7a3cb95bcac9c0f79) with two parameters - validator address and amount to withdraw. This call is for both stakers (who can use their own address as the parameter) and for delegators to withdraw their delegated stake on a specific validator.
 
-![withdraw option no. 1](<../../.gitbook/assets/image (2).png>)
+![withdraw option no. 1](<../../.gitbook/assets/image (7).png>)
 
-![withdraw option no. 2](<../../.gitbook/assets/image (1).png>)
+![withdraw option no. 2](<../../.gitbook/assets/image (2).png>)

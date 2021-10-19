@@ -8,7 +8,7 @@ Consensus is a fault-tolerant mechanism that is used in blockchain systems to ac
 
 
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5).png>)
 
 Consensus contract is used to manage the list of the network validators and delegators
 
