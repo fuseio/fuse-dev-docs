@@ -16,7 +16,10 @@
 
 ## Network
 
-* [How to become a validator](network/how-to-become-a-validator.md)
+* [How to run network nodes](network/how-to-run-network-nodes.md)
+* [How to become a validator](network/how-to-become-a-validator/README.md)
+  * [Getting started as a validator](network/how-to-become-a-validator/getting-started-as-a-validator.md)
+  * [Getting started as a validator on the Spark testnet](network/how-to-become-a-validator/getting-started-as-a-validator-on-the-spark-testnet.md)
 * [FIP's](network/fips.md)
 * [Fuse Consensus](network/untitled.md)
 
