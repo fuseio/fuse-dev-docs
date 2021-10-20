@@ -27,6 +27,10 @@
   * [Vote](network/untitled/vote.md)
   * [End-of-Cycle Flow](network/untitled/end-of-cycle-flow.md)
   * [Contract Addresses](network/untitled/contract-addresses.md)
+* [Network Upgrades](network/network-upgrades/README.md)
+  * [Upgrade Guide](network/network-upgrades/upgrade-guide.md)
+  * [Upgrade Guide (explorer nodes)](network/network-upgrades/upgrade-guide-explorer-nodes.md)
+  * [Block 1400000 Fork](network/network-upgrades/block-1400000-fork.md)
 
 ## Fuse Network Contracts <a href="bridges" id="bridges"></a>
 
