@@ -8,6 +8,20 @@ description: >-
 
 Fuse native bridge between Ethereum and Fuse is used to relay the Fuse native token from Fuse to Ethereum network
 
+## Architecture Overview
+
+The Fuse bridged is based on POA's bridge implementation, it is used to transfer Fuse tokens between the Fuse chain and the Ethereum network.
+
+Tokens sent to the respective bridge contract on one network (whether it's Fuse or Ethereum) are "locked" in the bridge, "unlocked" on the other network bridge and transferred to the sender. The bridge contracts are deployed on both networks, and bridge oracle processes run on each validators machine as part of the validator deployment stack.
+
+Besides the transfer of Fuse tokens between the two networks, the bridge is also responsible for network core functionality events of relaying the block rewards to the Ethereum network.
+
+**Mint block reward distributed on the Fuse chain on Ethereum**
+
+Each cycle the total block reward distributed on Fuse chain is minted on Ethereum and locked on the bridge contract.
+
+This works by listening to the \`RewardedOnCycle\` event emitted by the BlockReward contract on Fuse chain, waiting for all bridge validators on Fuse chain to sign it, and eventually sending a transaction to mint on Ethereum (by the last signing validator).
+
 ## Contracts
 
 Home side of the bridge on the Fuse network: [0xd617774b9708F79187Dc7F03D3Bdce0a623F6988](https://explorer.fuse.io/address/0xd617774b9708F79187Dc7F03D3Bdce0a623F6988/transactions)
