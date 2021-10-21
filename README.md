@@ -1,5 +1,7 @@
 # Introduction
 
+This is the developer-focused documentation portal for the Fuse platform. More high-level documentation for Fuse is available [here](https://docs.fuse.io).&#x20;
+
 Fuse is a decentralized blockchain-powered platform and technology stack whose goal is to enable genuine mass adoption of crypto payments and decentralized finance (DeFi).&#x20;
 
 Its main components are the Fuse Network [blockchain](https://docs.fuse.io/general/fuse-network-blockchain), the mobile-centric [infrastructure](https://docs.fuse.io/general/fuse-infrastructure) for seamless creation of token communities and a set of reference decentralized finance (DeFi) [tools](./#fuse-services).&#x20;
