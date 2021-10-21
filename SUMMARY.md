@@ -1,9 +1,8 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Introduction](README.md)
 * [Network Details](network-details.md)
 * [Developer Resources & Tools](developer-resources-and-tools.md)
-* [Using Metamask](using-metamask.md)
 
 ## Fuse Services <a href="fuse-studio" id="fuse-studio"></a>
 
@@ -20,7 +19,6 @@
 * [How to become a validator](network/how-to-become-a-validator/README.md)
   * [Getting started as a validator](network/how-to-become-a-validator/getting-started-as-a-validator.md)
   * [Getting started as a validator on the Spark testnet](network/how-to-become-a-validator/getting-started-as-a-validator-on-the-spark-testnet.md)
-* [FIP's](network/fips.md)
 * [Fuse Consensus](network/untitled.md)
   * [Contracts Overview](network/untitled/contracts-overview.md)
   * [Stake, Delegate and Withdraw](network/untitled/stake-delegate-and-withdraw.md)
@@ -31,19 +29,20 @@
   * [Upgrade Guide](network/network-upgrades/upgrade-guide.md)
   * [Upgrade Guide (explorer nodes)](network/network-upgrades/upgrade-guide-explorer-nodes.md)
   * [Block 1400000 Fork](network/network-upgrades/block-1400000-fork.md)
+  * [FIP's](network/network-upgrades/fips.md)
 
-## Fuse Network Contracts <a href="bridges" id="bridges"></a>
+## Important Smart Contracts
 
-* [Fuse Token](bridges/fuse-token.md)
-* [Bridges](bridges/bridges/README.md)
-  * [Ethereum ↔ Fuse GoodDollar Token](bridges/bridges/ethereum-fuse-gooddollar-token.md)
-  * [Ethereum ↔ Fuse ERC20 Tokens](bridges/bridges/eth-fuse-erc20-bridge.md)
-  * [BSC ↔ Fuse BNB](bridges/bridges/bsc-fuse-bnb-bridge.md)
-  * [BSC ↔ Fuse Native](bridges/bridges/bsc-fuse-native.md)
-  * [BSC  ↔ Fuse ERC20](bridges/bridges/bsc-fuse-erc20-bridge.md)
-  * [Ethereum ↔ Fuse Native](bridges/bridges/eth-fuse-native-bridge.md)
-* [Fuse Dollar](bridges/fuse-dollar.md)
-* [Major Deployed Contracts](bridges/major-deployed-contracts.md)
+* [Fuse Token](important-smart-contracts/fuse-token.md)
+* [Bridges](important-smart-contracts/bridges/README.md)
+  * [Ethereum ↔ Fuse GoodDollar Token](important-smart-contracts/bridges/ethereum-fuse-gooddollar-token.md)
+  * [Ethereum ↔ Fuse ERC20 Tokens](important-smart-contracts/bridges/eth-fuse-erc20-bridge.md)
+  * [BSC ↔ Fuse BNB](important-smart-contracts/bridges/bsc-fuse-bnb-bridge.md)
+  * [BSC ↔ Fuse Native](important-smart-contracts/bridges/bsc-fuse-native.md)
+  * [BSC  ↔ Fuse ERC20](important-smart-contracts/bridges/bsc-fuse-erc20-bridge.md)
+  * [Ethereum ↔ Fuse Native](important-smart-contracts/bridges/eth-fuse-native-bridge.md)
+* [Fuse Dollar](important-smart-contracts/fuse-dollar.md)
+* [Major Deployed Contracts](important-smart-contracts/major-deployed-contracts.md)
 
 ## Fuse Wallet
 

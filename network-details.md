@@ -9,4 +9,4 @@
   * Archive node RPC:  [https://explorer-node.fuse.io/](https://explorer-node.fuse.io)
 * Explorer: [http://explorer.fuse.io/](http://explorer.fuse.io)
 
-Please refer to the [quickstart](https://github.com/fuseio/fuse-network/#using-quickstart) if you wish to run your own node
+Please refer to [quickstart](https://github.com/fuseio/fuse-network/#using-quickstart) if you wish to run your own node.
