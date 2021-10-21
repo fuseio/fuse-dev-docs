@@ -28,7 +28,7 @@
 * [Network Upgrades](network/network-upgrades/README.md)
   * [Upgrade Guide](network/network-upgrades/upgrade-guide.md)
   * [Upgrade Guide (explorer nodes)](network/network-upgrades/upgrade-guide-explorer-nodes.md)
-  * [Block 1400000 Fork](network/network-upgrades/block-1400000-fork.md)
+  * [Block 14,000,000 Fork](network/network-upgrades/block-14-000-000-fork.md)
   * [FIP's](network/network-upgrades/fips.md)
 
 ## Important Smart Contracts
