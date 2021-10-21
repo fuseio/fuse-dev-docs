@@ -37,7 +37,7 @@ The EVM-compatible Fuse Network blockchain is the foundation of the Fuse platfor
 * Learn about [Fuse Consensus](https://developers.fuse.io/fuse-dev-docs/network/how-to-become-a-validator) and how to participate in it
 * Learn about [network upgrades](https://developers.fuse.io/fuse-dev-docs/network/network-upgrades) and how to implement them
 
-## Fuse Contracts
+## Important Smart Contracts
 
 Certain smart contracts on Fuse Network and other EVM-compatible chains may be useful for application developers building on top of Fuse. These include:
 
