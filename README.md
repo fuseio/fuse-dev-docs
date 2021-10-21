@@ -41,11 +41,13 @@ The EVM-compatible Fuse Network blockchain is the foundation of the Fuse platfor
 
 Certain smart contracts on Fuse Network and other EVM-compatible chains may be useful for application developers building on top of Fuse. These include:
 
-* The contracts for the Fuse Token on other chains
-* Learn about Fuse Dollar
-* Learn about bridges to Ethereum and BSC networks
+* The [contracts](https://developers.fuse.io/fuse-dev-docs/important-smart-contracts/fuse-token) for the Fuse Token on other chains
+* The [smart contracts](https://developers.fuse.io/fuse-dev-docs/important-smart-contracts/bridges) for Fuse bridges
+* The [FuseDollar contracts](https://developers.fuse.io/fuse-dev-docs/important-smart-contracts/fuse-dollar)
 
 ## Fuse Wallet
 
-* Learn how to run the wallet and customize by forking
+The Fuse team has developed an open-cource, easily forkable and customizable mobile crypto wallet that developers can use to create wallets to serve as frontends for the token communities created via the Studio.
+
+[Learn](https://developers.fuse.io/fuse-dev-docs/fuse-wallet/getting-started) how to run the wallet and customize it by forking.
 
