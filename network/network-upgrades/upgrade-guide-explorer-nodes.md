@@ -19,7 +19,7 @@ cd <to quickstart.sh location>
 wget -O quickstart.sh https://raw.githubusercontent.com/fuseio/fuse-network/master/scripts/quickstart.sh
 ```
 
-### Step 3 - Upgrade you DB using OEs upgrade tool
+### Step 3 - Upgrade your DB using OEs upgrade tool
 
 It is highly recommended to take a back up of your database folder before attempting!.
 
