@@ -6,7 +6,7 @@ In order to be a Fuse validator, you first must see that you meet the pre-requir
 
 * You know what it means to be a Fuse validator - How to become a validator
 * You have at least 100K FUSE tokens or you will have an aggregated delegation of at least 100K FUSE tokens (you can purchase FUSE token on [Uniswap](https://uniswap.exchange/swap/0x970b9bb2c0444f5e81e9d0efb84c8ccdcdcaf84d)).
-* You have an always-on hardware that meets the pre-requisites - [How to run network nodes](https://app.gitbook.com/o/-LdmeTBjede0-BcSd0W0/s/-MQROvzQPC4eD8u5AQhv/c/AuYNVNsGG1QrJ8DFBFZ4/network/how-to-run-network-nodes)
+* You have an always-on hardware that meets the pre-requisites -[ How to run network nodes](https://developers.fuse.io/fuse-dev-docs/network/how-to-run-network-nodes)
 
 ## How to become a Fuse validator
 
