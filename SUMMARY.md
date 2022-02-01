@@ -4,7 +4,7 @@
 * [Network Details](network-details.md)
 * [Developer Resources & Tools](developer-resources-and-tools.md)
 
-## Fuse Services <a href="fuse-studio" id="fuse-studio"></a>
+## Fuse Services <a href="#fuse-studio" id="fuse-studio"></a>
 
 * [Fuse Studio](fuse-studio/v2-api.md)
 * [Subgraphs](fuse-studio/subgraphs.md)
@@ -12,6 +12,7 @@
 * [Earn SDK](fuse-studio/earn-sdk/README.md)
   * [SingleRewardProgram](fuse-studio/earn-sdk/singlerewardprogram.md)
   * [MultiRewardProgram](fuse-studio/earn-sdk/multirewardprogram.md)
+* [WalletConnect on Fuse](fuse-studio/walletconnect-on-fuse.md)
 
 ## Network
 
