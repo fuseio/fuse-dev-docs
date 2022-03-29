@@ -1,16 +1,18 @@
+---
+description: >-
+  REST API for accessing and managing communities (or economies) on the Fuse
+  Studio platform.
+---
+
 # Fuse Studio
 
-## Studio Backend API v2.0.0
+Please attach the API key for all your request, you can get an API key by creating an economy on Fuse Studio. Important part of the API is the Admin module, it offers a simple API for minting and transfering tokens between economy members. Please contract the team to get access to the API. The backend base URL is [https://studio.fuse.io](https://studio.fuse.io). Learn more on [https://github.com/fuseio/fuse-studio](https://github.com/fuseio/fuse-studio)
 
-The Fuse Studio V2 REST API for accessing the data and the services of the Fuse network in a simple way. You can use this API to query and interact with the objects of the Fuse network such as: Communities, Tokens, Bridges and Entities. The backend base URL is [https://studio.fuse.io](https://studio.fuse.io). Learn more on [https://github.com/fuseio/fuse-studio](https://github.com/fuseio/fuse-studio)
+## Accounts <a href="#user-content-accounts" id="user-content-accounts"></a>
 
->
+### Fetch backend accounts <a href="#user-content-fetch-backend-accounts" id="user-content-fetch-backend-accounts"></a>
 
-## &#x20;Accounts
-
-### &#x20;Fetch backend accounts
-
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Fetch backend accounts
 
@@ -30,9 +32,9 @@ GET api/v2/accounts/
 | -------- | ---------- | ----------- |
 | accounts | `Object[]` | list        |
 
-### &#x20;Create backend account
+### Create backend account <a href="#user-content-create-backend-account" id="user-content-create-backend-account"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Create backend account
 
@@ -73,11 +75,51 @@ POST api/v2/accounts/
 | ------- | -------- | ----------------------------- |
 | created | `Object` | account and the jwt if needed |
 
-## &#x20;Admin
+### Unlock backend account <a href="#user-content-unlock-backend-account" id="user-content-unlock-backend-account"></a>
 
-### &#x20;Burn tokens
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
-[Back to top](broken-reference)
+Unlock backend account by accout address and bridge type
+
+```
+POST api/v2/accounts/
+```
+
+#### Headers
+
+| Name          | Type   | Description                                       |
+| ------------- | ------ | ------------------------------------------------- |
+| Authorization | String | JWT Authorization in a format "Bearer {jwtToken}" |
+
+#### Parameter Parameters
+
+| Name           | Type     | Description        |
+| -------------- | -------- | ------------------ |
+| accountAddress | `String` | Account address    |
+| bridgeType     | `String` | Account bridgeType |
+
+#### Param Examples
+
+`json` - Request-Example:
+
+```
+{
+   "accountAddress": "0x123",
+   "bridgeType": "home"
+ }
+```
+
+#### Success 200
+
+| Name     | Type     | Description                                        |
+| -------- | -------- | -------------------------------------------------- |
+| Unlocked | `Object` | account object if an account was actually unlocked |
+
+## Admin <a href="#user-content-admin" id="user-content-admin"></a>
+
+### Burn tokens <a href="#user-content-burn-tokens" id="user-content-burn-tokens"></a>
+
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Start async job of burning tokens
 
@@ -100,6 +142,12 @@ POST /api/v2/admin/tokens/burn
 | amount       | `String` | Token amount to burn                   |
 | from         | `String` | account to burn from (optional)        |
 
+#### Query Parameters
+
+| Name   | Type     | Description                       |
+| ------ | -------- | --------------------------------- |
+| apiKey | `String` | API key is used to access the API |
+
 #### Examples
 
 Burn 1.1 tokens on Fuse network
@@ -115,9 +163,9 @@ body: { tokenAddress: '0xbAa75ecD3Ea911c78A23D7cD16961Eadc5867d2b', networkType:
 | ------- | -------- | ----------- |
 | Started | `String` | job data    |
 
-### &#x20;Get burn events
+### Get burn events <a href="#user-content-get-burn-events" id="user-content-get-burn-events"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Get burn events created by admin
 
@@ -140,6 +188,12 @@ POST /api/v2/admin/tokens/burnEvents
 | endTime     | `String` |                                |
 | networkType | `String` | Token's network (must be Fuse) |
 
+#### Query Parameters
+
+| Name   | Type     | Description                       |
+| ------ | -------- | --------------------------------- |
+| apiKey | `String` | API key is used to access the API |
+
 #### Examples
 
 GET /api/v2/admin/tokens/burnEvents
@@ -149,9 +203,9 @@ GET /api/v2/admin/tokens/burnEvents
 body: { fromWallet: '0x755c33BE69dD2baB7286E7a2010fc8591AF15a1e', networkType: 'fuse' }
 ```
 
-### &#x20;Create token
+### Create token <a href="#user-content-create-token" id="user-content-create-token"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Start async job of creating a token
 
@@ -177,6 +231,12 @@ POST /api/v2/admin/tokens/create
 | spendabilityIds | `String` | Token spendability ids (comma-seperated list)                                     |
 | networkType     | `String` | Token's network (must be Fuse)                                                    |
 
+#### Query Parameters
+
+| Name   | Type     | Description                       |
+| ------ | -------- | --------------------------------- |
+| apiKey | `String` | API key is used to access the API |
+
 #### Examples
 
 Create a token on Fuse network
@@ -192,46 +252,9 @@ body: { name: 'MyCoolToken', symbol: 'MCT', initialSupply: '100', uri: 'ipfs://h
 | ------- | -------- | ----------- |
 | Started | `String` | job data    |
 
-### &#x20;Create foreign wallet for the matching home
+### Create wallet for phone number <a href="#user-content-create-wallet-for-phone-number" id="user-content-create-wallet-for-phone-number"></a>
 
-[Back to top](broken-reference)
-
-Start async job of creating a wallet on the foreign network
-
-```
-POST /api/v2/admin/wallets/create/foreign
-```
-
-#### Headers
-
-| Name          | Type   | Description                                       |
-| ------------- | ------ | ------------------------------------------------- |
-| Authorization | String | JWT Authorization in a format "Bearer {jwtToken}" |
-
-#### Parameter Parameters
-
-| Name          | Type     | Description                                                                                |
-| ------------- | -------- | ------------------------------------------------------------------------------------------ |
-| wallerAddress | `String` | address create a wallet for, should be an existing wallet on home network (body parameter) |
-
-#### Examples
-
-Create wallet for the provided wallet address
-
-```
-POST /api/v2/admin/wallets/create/foreign
-body: { wallerAddress: '0x92c358fcF6d270F97458C57583FCeabC086c3a26' }
-```
-
-#### Success 200
-
-| Name    | Type     | Description |
-| ------- | -------- | ----------- |
-| Started | `String` | job data    |
-
-### &#x20;Create wallet for phone number
-
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Start async job of creating a wallet for phone number (owned by the community admin)
 
@@ -251,6 +274,12 @@ POST /api/v2/admin/wallets/create
 | ----------- | -------- | ---------------------------------------------------- |
 | phoneNumber | `String` | phone number to create a wallet for (body parameter) |
 
+#### Query Parameters
+
+| Name   | Type     | Description                       |
+| ------ | -------- | --------------------------------- |
+| apiKey | `String` | API key is used to access the API |
+
 #### Examples
 
 Create wallet for the provided phone number
@@ -266,9 +295,9 @@ body: { phoneNumber: '+972546123321' }
 | ------- | -------- | ----------- |
 | Started | `String` | job data    |
 
-### &#x20;Get expired by wallet/token/spendabilityId
+### Get expired by wallet/token/spendabilityId <a href="#user-content-get-expired-by-wallet-token-spendabilityid" id="user-content-get-expired-by-wallet-token-spendabilityid"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Get expired balance for one/multiple wallets by token or spendabilityId
 
@@ -291,6 +320,12 @@ POST /api/v2/admin/tokens/expired
 | spendabilityId | `String` |                                |
 | networkType    | `String` | Token's network (must be Fuse) |
 
+#### Query Parameters
+
+| Name   | Type     | Description                       |
+| ------ | -------- | --------------------------------- |
+| apiKey | `String` | API key is used to access the API |
+
 #### Examples
 
 GET /api/v2/admin/tokens/expired
@@ -300,9 +335,44 @@ GET /api/v2/admin/tokens/expired
 body: { walletAddress: '0x755c33BE69dD2baB7286E7a2010fc8591AF15a1e', tokenAddress: '0xbAa75ecD3Ea911c78A23D7cD16961Eadc5867d2b', networkType: 'fuse' }
 ```
 
-### &#x20;Mint tokens
+### Get token jobs by address on fuse <a href="#user-content-get-token-jobs-by-address-on-fuse" id="user-content-get-token-jobs-by-address-on-fuse"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
+
+Get token transfer events by address on fuse
+
+```
+GET api/v2/admin/wallets/transfers/tokentx/:walletAddress
+```
+
+#### Headers
+
+| Name          | Type   | Description                                       |
+| ------------- | ------ | ------------------------------------------------- |
+| Authorization | String | JWT Authorization in a format "Bearer {jwtToken}" |
+
+#### Parameter Parameters
+
+| Name           | Type     | Description                          |
+| -------------- | -------- | ------------------------------------ |
+| tokenAddress   | `String` | Address of the token                 |
+| fromBlockNumer | `String` | The block number to start fetch from |
+
+#### Query Parameters
+
+| Name   | Type     | Description                       |
+| ------ | -------- | --------------------------------- |
+| apiKey | `String` | API key is used to access the API |
+
+#### Success 200
+
+| Name | Type     | Description   |
+| ---- | -------- | ------------- |
+| data | `Object` | Array of jobs |
+
+### Mint tokens <a href="#user-content-mint-tokens" id="user-content-mint-tokens"></a>
+
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Start async job of minting tokens
 
@@ -325,6 +395,12 @@ POST /api/v2/admin/tokens/mint
 | amount       | `String` | Token amount to mint                   |
 | toAddress    | `String` | account to transfer to                 |
 
+#### Query Parameters
+
+| Name   | Type     | Description                       |
+| ------ | -------- | --------------------------------- |
+| apiKey | `String` | API key is used to access the API |
+
 #### Examples
 
 Minting 1.1 tokens on Fuse network
@@ -340,9 +416,9 @@ body: { tokenAddress: '0xbAa75ecD3Ea911c78A23D7cD16961Eadc5867d2b', networkType:
 | ------- | -------- | ----------- |
 | Started | `String` | job data    |
 
-### &#x20;Transfer tokens from account
+### Transfer tokens from account <a href="#user-content-transfer-tokens-from-account" id="user-content-transfer-tokens-from-account"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Start async job of transferring tokens from account (owned by community admin)
 
@@ -368,6 +444,12 @@ POST /api/v2/admin/tokens/transfer
 | from              | `String` | account to transfer from                                                          |
 | to                | `String` | address to transfer to                                                            |
 
+#### Query Parameters
+
+| Name   | Type     | Description                       |
+| ------ | -------- | --------------------------------- |
+| apiKey | `String` | API key is used to access the API |
+
 #### Examples
 
 Transfer 1.1 tokens on Fuse network
@@ -383,64 +465,11 @@ body: { tokenAddress: '0xbAa75ecD3Ea911c78A23D7cD16961Eadc5867d2b', networkType:
 | ------- | -------- | ----------- |
 | Started | `String` | job data    |
 
-## &#x20;Contacts
+## Jobs <a href="#user-content-jobs" id="user-content-jobs"></a>
 
-### &#x20;Acknowledge contacts list sync with nonce
+### Fetch job by correlationId <a href="#user-content-fetch-job-by-correlationid" id="user-content-fetch-job-by-correlationid"></a>
 
-[Back to top](broken-reference)
-
-Acknowledge contacts list sync with nonce
-
-```
-POST /api/v2/contacts/:nonce
-```
-
-#### Headers
-
-| Name          | Type   | Description                                       |
-| ------------- | ------ | ------------------------------------------------- |
-| Authorization | String | JWT Authorization in a format "Bearer {jwtToken}" |
-
-#### Success 200
-
-| Name     | Type     | Description          |
-| -------- | -------- | -------------------- |
-| response | `String` | Response status - ok |
-
-### &#x20;Sync contacts list
-
-[Back to top](broken-reference)
-
-Sync contacts list
-
-```
-POST api/v2/contacts/
-```
-
-#### Headers
-
-| Name          | Type   | Description                                       |
-| ------------- | ------ | ------------------------------------------------- |
-| Authorization | String | JWT Authorization in a format "Bearer {jwtToken}" |
-
-#### Parameter Parameters
-
-| Name     | Type       | Description        |
-| -------- | ---------- | ------------------ |
-| contacts | `String[]` | phone numbers list |
-
-#### Success 200
-
-| Name  | Type       | Description                          |
-| ----- | ---------- | ------------------------------------ |
-| new   | `Object[]` | contacts list (phoneNumber, account) |
-| nonce | `Number`   |                                      |
-
-## &#x20;Jobs
-
-### &#x20;Fetch job by correlationId
-
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Fetches agenda job by job's correlationId
 
@@ -460,9 +489,9 @@ GET api/v2/jobs/correlationId/:correlationId
 | ---- | -------- | ----------- |
 | data | `Object` | Job object  |
 
-### &#x20;Fetch job by id
+### Fetch job by id <a href="#user-content-fetch-job-by-id" id="user-content-fetch-job-by-id"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Fetch job by id
 
@@ -482,11 +511,55 @@ GET api/v2/jobs/:jobId
 | ---- | -------- | ----------- |
 | data | `Object` | Job object  |
 
-## &#x20;Login
+### Retry failed job by id <a href="#user-content-retry-failed-job-by-id" id="user-content-retry-failed-job-by-id"></a>
 
-### &#x20;Login using firebase ID token
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
-[Back to top](broken-reference)
+Retry failed job by id
+
+```
+GET api/v2/jobs/retry/:jobId
+```
+
+#### Headers
+
+| Name          | Type   | Description                                       |
+| ------------- | ------ | ------------------------------------------------- |
+| Authorization | String | JWT Authorization in a format "Bearer {jwtToken}" |
+
+#### Success 200
+
+| Name | Type     | Description |
+| ---- | -------- | ----------- |
+| data | `Object` | Job object  |
+
+### Retry failed job by query <a href="#user-content-retry-failed-job-by-query" id="user-content-retry-failed-job-by-query"></a>
+
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
+
+Retry failed job by id
+
+```
+GET api/v2/jobs/retry
+```
+
+#### Headers
+
+| Name          | Type   | Description                                       |
+| ------------- | ------ | ------------------------------------------------- |
+| Authorization | String | JWT Authorization in a format "Bearer {jwtToken}" |
+
+#### Success 200
+
+| Name | Type     | Description |
+| ---- | -------- | ----------- |
+| data | `Object` | Job object  |
+
+## Login <a href="#user-content-login" id="user-content-login"></a>
+
+### Login using firebase ID token <a href="#user-content-login-using-firebase-id-token" id="user-content-login-using-firebase-id-token"></a>
+
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Login using firebase ID token
 
@@ -507,9 +580,9 @@ POST api/v2/login/
 | ----- | -------- | ----------- |
 | token | `String` | JWT token   |
 
-### &#x20;Request a verification code
+### Request a verification code <a href="#user-content-request-a-verification-code" id="user-content-request-a-verification-code"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Request a verification code to user's phone number
 
@@ -529,9 +602,9 @@ POST api/v2/login/request
 | -------- | -------- | -------------------- |
 | response | `String` | Response status - ok |
 
-### &#x20;Verify user phone number
+### Verify user phone number <a href="#user-content-verify-user-phone-number" id="user-content-verify-user-phone-number"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Verify user phone number by SMS verification code
 
@@ -553,11 +626,11 @@ POST api/v2/login/verify
 | ----- | -------- | ----------- |
 | token | `String` | JWT token   |
 
-## &#x20;Wallet
+## Wallet <a href="#user-content-wallet" id="user-content-wallet"></a>
 
-### &#x20;Create wallet contract for user
+### Create wallet contract for user <a href="#user-content-create-wallet-contract-for-user" id="user-content-create-wallet-contract-for-user"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Creates wallet contract for the user
 
@@ -577,11 +650,11 @@ POST api/v2/wallets/
 | ------- | -------- | ----------- |
 | Started | `Object` | job data    |
 
-### &#x20;Create wallet contract for user on Ethereum
+### Create wallet contract for user on Ethereum <a href="#user-content-create-wallet-contract-for-user-on-ethereum" id="user-content-create-wallet-contract-for-user-on-ethereum"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
-Creates wallet contract for the user on Ethereum
+\[Deprecated!] Creates wallet contract for the user on Ethereum
 
 ```
 POST api/v2/wallets/foreign
@@ -599,9 +672,9 @@ POST api/v2/wallets/foreign
 | ------- | -------- | ----------- |
 | Started | `Object` | job data    |
 
-### &#x20;Fetch all wallets by phone number
+### Fetch all wallets by phone number <a href="#user-content-fetch-all-wallets-by-phone-number" id="user-content-fetch-all-wallets-by-phone-number"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Fetches all wallets created by phone number
 
@@ -621,9 +694,9 @@ GET api/v2/wallets/all/:phoneNumber
 | ---- | -------- | ----------------------- |
 | data | `Object` | Array of Wallet objects |
 
-### &#x20;Get token transfer events by address on fuse
+### Get token transfer events by address on fuse <a href="#user-content-get-token-transfer-events-by-address-on-fuse" id="user-content-get-token-transfer-events-by-address-on-fuse"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Get token transfer events by address on fuse
 
@@ -650,9 +723,9 @@ GET api/v2/wallets/transfers/tokentx/:walletAddress
 | ---- | -------- | ------------------------ |
 | data | `Object` | Array of transfer events |
 
-### &#x20;Fetch user wallet
+### Fetch user wallet <a href="#user-content-fetch-user-wallet" id="user-content-fetch-user-wallet"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Fetches user's wallet address
 
@@ -672,9 +745,9 @@ GET api/v2/wallets/
 | ---- | -------- | ------------------ |
 | data | `Object` | User wallet object |
 
-### &#x20;Fetch latest wallet by phone number
+### Fetch latest wallet by phone number <a href="#user-content-fetch-latest-wallet-by-phone-number" id="user-content-fetch-latest-wallet-by-phone-number"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Fetches latest wallet created by phone number
 
@@ -694,9 +767,9 @@ GET api/v2/wallets/:phoneNumber
 | ---- | -------- | ------------- |
 | data | `Object` | Wallet object |
 
-### &#x20;Notify server on client wallet backup
+### Notify server on client wallet backup <a href="#user-content-notify-server-on-client-wallet-backup" id="user-content-notify-server-on-client-wallet-backup"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Notify the server that the client has backed up his wallet
 
@@ -722,9 +795,9 @@ POST api/v2/wallets/backup
 | ------- | -------- | ----------- |
 | Started | `Object` | job data    |
 
-### &#x20;Create wallet for phone number
+### Create wallet for phone number <a href="#user-content-create-wallet-for-phone-number" id="user-content-create-wallet-for-phone-number"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Creates wallet contract for phone number, owned by the server until claimed by the user
 
@@ -750,9 +823,9 @@ POST api/v2/wallets/invite/:phoneNumber
 | ------- | -------- | ----------- |
 | Started | `Object` | job data    |
 
-### &#x20;Check if wallet exists by wallet address
+### Check if wallet exists by wallet address <a href="#user-content-check-if-wallet-exists-by-wallet-address" id="user-content-check-if-wallet-exists-by-wallet-address"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Checks if wallet exists by wallet address
 
@@ -772,11 +845,11 @@ GET api/v2/wallets/exists/:walletAddress
 | ---- | --------- | -------------------------------------- |
 | data | `Boolean` | True if wallet exists, false otherwide |
 
-## &#x20;WalletLogin
+## WalletLogin <a href="#user-content-walletlogin" id="user-content-walletlogin"></a>
 
-### &#x20;Request a verification code
+### Request a verification code <a href="#user-content-request-a-verification-code" id="user-content-request-a-verification-code"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Request a verification code to user's phone number
 
@@ -796,9 +869,9 @@ POST api/v2/login/wallet/sms/request
 | -------- | -------- | -------------------- |
 | response | `String` | Response status - ok |
 
-### &#x20;Login using firebase ID token
+### Login using firebase ID token <a href="#user-content-login-using-firebase-id-token" id="user-content-login-using-firebase-id-token"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Login using firebase ID token
 
@@ -821,9 +894,9 @@ POST api/v2/login/wallet/firebase/verify
 | ----- | -------- | ----------- |
 | token | `String` | JWT token   |
 
-### &#x20;Verify user phone number
+### Verify user phone number <a href="#user-content-verify-user-phone-number" id="user-content-verify-user-phone-number"></a>
 
-[Back to top](broken-reference)
+[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v2.md#top)
 
 Verify user phone number by SMS verification code
 
