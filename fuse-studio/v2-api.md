@@ -1,12 +1,10 @@
 ---
-description: >-
-  REST API for accessing and managing communities (or economies) on the Fuse
-  Studio platform.
+description: REST API documentation
 ---
 
 # Fuse Studio
 
-Please attach the API key for all your request, you can get an API key by creating an economy on Fuse Studio. Important part of the API is the Admin module, it offers a simple API for minting and transfering tokens between economy members. Please contract the team to get access to the API. The backend base URL is [https://studio.fuse.io](https://studio.fuse.io). Learn more on [https://github.com/fuseio/fuse-studio](https://github.com/fuseio/fuse-studio)
+REST API for accessing and managing communities (or economies) on the Fuse Studio platform. Please attach the API key for all your request, you can get an API key by creating an economy on Fuse Studio. Important part of the API is the Admin module, it offers a simple API for minting and transferring tokens between economy members. Please contract the team to get access to the API. The backend base URL is [https://studio.fuse.io](https://studio.fuse.io). Learn more on [https://github.com/fuseio/fuse-studio](https://github.com/fuseio/fuse-studio)
 
 ## Accounts <a href="#user-content-accounts" id="user-content-accounts"></a>
 
