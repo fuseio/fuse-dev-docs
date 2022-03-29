@@ -18,10 +18,6 @@ Fuse Studio is the platform for creating and managing token communities. The Fus
 
 FuseSwap is the first Fuse-native decentralized exchange (DEX). The Fuse team makes available an auxiliary [service](https://developers.fuse.io/fuse-dev-docs/fuse-studio/fuseswap-service) to query prices and stats on it.
 
-### Fuse Subscription
-
-Allows to subscribe to token balances changes on the Fuse network. Currently restricted for internal usage.
-
 ### Subgraphs
 
 Fuse's integration with The Graph enables the indexing of smart contract transactions on Fuse Network through the creation of [subgraphs](https://thegraph.academy/developers/defining-a-subgraph/). The Fuse team maintains a set of [Fuse subgraphs](https://developers.fuse.io/fuse-dev-docs/fuse-studio/subgraphs) that can also be used by external developers.&#x20;
