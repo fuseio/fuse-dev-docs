@@ -1,33 +1,6 @@
-# Community API
+# Economy API
 
 Base URL: [https://studio.fuse.io/api/v1](https://studio.fuse.io/api/v1)
-
-### Add bridge to community
-
-[Back to top](https://github.com/fuseio/fuse-studio/blob/master/server/docs/api-v1.md#top)
-
-```
-POST /communities/:communityAddress/bridge
-```
-
-#### Parameter Parameters
-
-| Name             | Type              | Description                                                                                    |
-| ---------------- | ----------------- | ---------------------------------------------------------------------------------------------- |
-| communityAddress | `String`          | Community address                                                                              |
-| bridgeType       | `bridgeType`      | <ul><li>'multiple-erc20-to-erc20'/'multi-amb-erc20-to-erc677'/'amb-erc677-to-erc677'</li></ul> |
-| bridgeDirection  | `bridgeDirection` | <ul><li>'foreign-to-home'/'home-to-foreign'</li></ul>                                          |
-
-#### Param Examples
-
-`json` - Request-Example:
-
-```
-{
-   "bridgeType": "multi-amb-erc20-to-erc677",
-   "bridgeDirection": "home-to-foreign"
-}
-```
 
 ### Add foreign token address to community <a href="#user-content-add-foreign-token-address-to-community" id="user-content-add-foreign-token-address-to-community"></a>
 

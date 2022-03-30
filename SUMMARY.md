@@ -6,8 +6,9 @@
 
 ## Fuse API
 
+* [Overview](fuse-api/overview.md)
 * [Token API](fuse-api/token-api.md)
-* [Community API](fuse-api/community-api.md)
+* [Economy API](fuse-api/economy-api.md)
 * [Wallet API](fuse-api/wallet-api.md)
 * [Jobs API](fuse-api/jobs-api.md)
 * [Admin API](fuse-api/admin-api.md)
