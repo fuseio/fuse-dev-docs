@@ -1,6 +1,6 @@
 # Network Details
 
-* Network name:** Fuse Network**
+* Network name: **Fuse Network**
 * ChanId: **122**
 * Gas price: **1 gwei**
 * RPC

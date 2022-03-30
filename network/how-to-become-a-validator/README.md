@@ -48,7 +48,7 @@ Validators are the guardians of the network and are in charge of not only mainta
 ### Who shouldn’t become a validator (and what can he still do)
 
 * **Non technical users** - Running a node requires technical background in blockchain and web hosting. It’s not very complicated but also not trivial or basic.
-* **Simple holders **- We are looking for validators who are invested in the future of the network and are looking to take an active part. This is what the DPoS (Delegated Proof of Stake) mechanism was born to do.
+* **Simple holders** - We are looking for validators who are invested in the future of the network and are looking to take an active part. This is what the DPoS (Delegated Proof of Stake) mechanism was born to do.
 
 [You can delegate you Fuse token to a validator](broken-reference) of your choosing. Not everybody that wants to earn rewards need to be a validator! Any token holder can delegate their Fuse token to a validator to earn rewards through the validator.
 

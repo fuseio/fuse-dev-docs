@@ -4,11 +4,18 @@
 * [Network Details](network-details.md)
 * [Developer Resources & Tools](developer-resources-and-tools.md)
 
+## Fuse API
+
+* [Token API](fuse-api/token-api.md)
+* [Community API](fuse-api/community-api.md)
+* [Wallet API](fuse-api/wallet-api.md)
+* [Jobs API](fuse-api/jobs-api.md)
+* [Admin API](fuse-api/admin-api.md)
+* [Trade API](fuse-api/trade-api.md)
+
 ## Fuse Services <a href="#fuse-studio" id="fuse-studio"></a>
 
-* [Fuse Studio](fuse-studio/v2-api.md)
-* [Subgraphs](fuse-studio/subgraphs.md)
-* [Fuseswap Service](fuse-studio/fuseswap-service.md)
+* [TheGraph](fuse-studio/subgraphs.md)
 * [Earn SDK](fuse-studio/earn-sdk/README.md)
   * [SingleRewardProgram](fuse-studio/earn-sdk/singlerewardprogram.md)
   * [MultiRewardProgram](fuse-studio/earn-sdk/multirewardprogram.md)
