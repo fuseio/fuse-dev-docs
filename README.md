@@ -36,11 +36,11 @@ Fuse offers application developers several backend services that expose APIs tha
 
 Fuse Studio is the platform for creating and managing token communities. The Fuse Studio playground [interface](https://studio.fuse.io) enables the creation and management of token communities without coding but for more sophisticated use cases [Fuse Studio API](https://developers.fuse.io/fuse-dev-docs/fuse-studio/v2-api) is available.
 
-### FuseSwap Service
+### Trading Service
 
-FuseSwap is the first Fuse-native decentralized exchange (DEX). The Fuse team makes available an auxiliary [service](https://developers.fuse.io/fuse-dev-docs/fuse-studio/fuseswap-service) to query prices and stats on it.
+Voltage Finance is the first Fuse-native decentralized exchange (DEX). The Fuse team makes available an auxiliary [service](https://developers.fuse.io/fuse-dev-docs/fuse-studio/fuseswap-service) to query prices and stats on it.
 
-### Subgraphs
+### The Graph
 
 Fuse's integration with The Graph enables the indexing of smart contract transactions on Fuse Network through the creation of [subgraphs](https://thegraph.academy/developers/defining-a-subgraph/). The Fuse team maintains a set of [Fuse subgraphs](https://developers.fuse.io/fuse-dev-docs/fuse-studio/subgraphs) that can also be used by external developers.&#x20;
 
@@ -48,7 +48,7 @@ Fuse's integration with The Graph enables the indexing of smart contract transac
 
 [Earn SDK](https://developers.fuse.io/fuse-dev-docs/fuse-studio/earn-sdk) is a client-server SDK for building applications that can interact with various earning functionalities on Fuse.
 
-##
+
 
 ## Important Smart Contracts
 
