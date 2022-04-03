@@ -4,11 +4,33 @@ This is the developer-focused documentation portal for the Fuse platform. More h
 
 Fuse is a decentralized blockchain-powered platform and technology stack whose goal is to enable genuine mass adoption of crypto payments and decentralized finance (DeFi).&#x20;
 
-Its main components are the Fuse Network [blockchain](https://docs.fuse.io/general/fuse-network-blockchain), the mobile-centric [infrastructure](https://docs.fuse.io/general/fuse-infrastructure) for seamless creation of token communities and a set of reference decentralized finance (DeFi) [tools](./#fuse-services).&#x20;
+Its main components are the Fuse Network [blockchain](https://docs.fuse.io/general/fuse-network-blockchain), the mobile-centric [infrastructure](https://docs.fuse.io/general/fuse-infrastructure) for seamless creation of token communities and a set of reference decentralized finance (DeFi) [tools](./#fuse-services).
+
+## Fuse Network
+
+The EVM-compatible Fuse Network blockchain is the foundation of the Fuse platform. The information on this portal will help you:
+
+* Learn how to [run various network nodes](https://developers.fuse.io/fuse-dev-docs/network/how-to-run-network-nodes)
+* Learn how to [become a validator](https://developers.fuse.io/fuse-dev-docs/network/how-to-become-a-validator)
+* Learn about [Fuse Consensus](https://developers.fuse.io/fuse-dev-docs/network/how-to-become-a-validator) and how to participate in it
+* Learn about [network upgrades](https://developers.fuse.io/fuse-dev-docs/network/network-upgrades) and how to implement them
+
+## Fuse API
+
+Fuse provide a bundle of API's to access and perform community-centric payments on the Fuse Network. Most of the API do require a economy set up on Fuse Studio.
+
+* Token API - token details
+* Economy API - accessing and manipulating the economy details
+* Wallet API - accessing and deploying user wallets
+* Jobs API - task execution API
+* Admin API - performing community payments.
+* Trade API - trading tokens and executing swaps
+
+
 
 ## Fuse Services
 
-Fuse offers application developers several backend services that expose APIs that can be used by anyone seeking to build on Fuse. Alhough some functionalities do require a dedicated API key or access token.
+Fuse offers application developers several backend services that expose APIs that can be used by anyone seeking to build on Fuse. Although some functionalities do require a dedicated API key or access token.
 
 ### Fuse Studio
 
@@ -26,14 +48,7 @@ Fuse's integration with The Graph enables the indexing of smart contract transac
 
 [Earn SDK](https://developers.fuse.io/fuse-dev-docs/fuse-studio/earn-sdk) is a client-server SDK for building applications that can interact with various earning functionalities on Fuse.
 
-## Fuse Network
-
-The EVM-compatible Fuse Network blockchain is the foundation of the Fuse platform. The information on this portal will help you:
-
-* Learn how to [run various network nodes](https://developers.fuse.io/fuse-dev-docs/network/how-to-run-network-nodes)
-* Learn how to [become a validator](https://developers.fuse.io/fuse-dev-docs/network/how-to-become-a-validator)
-* Learn about [Fuse Consensus](https://developers.fuse.io/fuse-dev-docs/network/how-to-become-a-validator) and how to participate in it
-* Learn about [network upgrades](https://developers.fuse.io/fuse-dev-docs/network/network-upgrades) and how to implement them
+##
 
 ## Important Smart Contracts
 
