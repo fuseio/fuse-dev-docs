@@ -19,14 +19,12 @@ The EVM-compatible Fuse Network blockchain is the foundation of the Fuse platfor
 
 Fuse provide a bundle of API's to access and perform community-centric payments on the Fuse Network. Most of the API do require a economy set up on Fuse Studio.
 
-* Token API - token details
-* Economy API - accessing and manipulating the economy details
-* Wallet API - accessing and deploying user wallets
-* Jobs API - task execution API
-* Admin API - performing community payments.
-* Trade API - trading tokens and executing swaps
-
-
+* [Token API](fuse-api/token-api.md) - fetching economy tokens
+* [Economy API](fuse-api/economy-api.md) - accessing and manipulating the economy details
+* [Wallet API](fuse-api/wallet-api.md) - accessing and deploying user wallets
+* [Jobs API](fuse-api/jobs-api.md) - task execution API
+* [Admin API ](fuse-api/jobs-api.md)- performing community payments.
+* [Trade API](fuse-api/trade-api.md) - trading tokens and executing swaps
 
 ## Fuse Services
 
