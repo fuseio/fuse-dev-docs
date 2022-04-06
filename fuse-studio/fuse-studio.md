@@ -1,6 +1,6 @@
 # Fuse Studio
 
-Fuse Studio is the platform for creating, building and managing economies. The Fuse Studio playground [interface](https://studio.fuse.io) enables the creation and management of token communities without coding but for more sophisticated use cases [Fuse API](fuse-studio.md#fuse-api) is available.
+Fuse Studio is the platform for creating, building and managing economies. The [Fuse Studio](https://studio.fuse.io) enables the creation and management of token communities without coding. For more sophisticated use cases [Fuse API](fuse-studio.md#fuse-api) is available.
 
 On Fuse Studio you get access to:
 
