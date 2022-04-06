@@ -16,6 +16,7 @@
 
 ## Fuse Services <a href="#fuse-studio" id="fuse-studio"></a>
 
+* [Fuse Studio](fuse-studio/fuse-studio.md)
 * [TheGraph](fuse-studio/subgraphs.md)
 * [Earn SDK](fuse-studio/earn-sdk/README.md)
   * [SingleRewardProgram](fuse-studio/earn-sdk/singlerewardprogram.md)

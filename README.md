@@ -17,7 +17,7 @@ The EVM-compatible Fuse Network blockchain is the foundation of the Fuse platfor
 
 ## Fuse API
 
-Fuse provide a bundle of API's to access and perform community-centric payments on the Fuse Network. Most of the API do require a economy set up on Fuse Studio.
+Fuse provide a bundle of API's to access and perform community-centric payments on the Fuse Network. Most of the API do require an economy set up on Fuse Studio.
 
 * [Token API](fuse-api/token-api.md) - fetching economy tokens
 * [Economy API](fuse-api/economy-api.md) - accessing and manipulating the economy details
@@ -32,7 +32,7 @@ Fuse offers application developers several backend services that expose APIs tha
 
 ### Fuse Studio
 
-Fuse Studio is the platform for creating and managing token communities. The Fuse Studio playground [interface](https://studio.fuse.io) enables the creation and management of token communities without coding but for more sophisticated use cases [Fuse Studio API](https://developers.fuse.io/fuse-dev-docs/fuse-studio/v2-api) is available.
+Fuse Studio is the platform for creating, building and managing economies. The Fuse Studio playground [interface](https://studio.fuse.io) enables the creation and management of token communities without coding but for more sophisticated use cases [Fuse API](./#fuse-api) is available.
 
 ### Trading Service
 
