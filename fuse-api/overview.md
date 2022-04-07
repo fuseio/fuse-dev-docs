@@ -22,7 +22,7 @@ Fuse provide a bundle of API's to access and perform community-centric payments 
 
 ### API Key
 
-The API key is used to access the Fuse API without a limit. The API key is associated with the economy you created on Fuse Studio. it does not have to be stored secretly as it's not used for authentication but for the measuring API quotas and metrics.&#x20;
+The API key is used to access the Fuse API without a limit. The API key is associated with the economy you created on Fuse Studio. The key can be stored either on the client and server side, and does not need to be secured as its not used for authorization but merely for measurement  on quotas and metrics.
 
 To use the API key you need to append it to any request in a form of the query parameter `apiKey={YOUR_KEY}`.  For example, the URL for fetching a community should look like:
 
