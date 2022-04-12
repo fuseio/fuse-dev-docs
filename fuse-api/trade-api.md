@@ -2,100 +2,33 @@
 
 Base URL: [https://api.fuseswap.com/](https://api.fuseswap.com)
 
-## PriceChange
-
-### Get price change for token over last 24 hours <a href="#user-content-get-price-change-for-token-over-last-24-hours" id="user-content-get-price-change-for-token-over-last-24-hours"></a>
-
-[Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
-
-```
-GET /api/v1/pricechange
-```
-
-#### Parameter Parameters
-
-| Name         | Type     | Description          |
-| ------------ | -------- | -------------------- |
-| tokenAddress | `String` | The currency address |
-
-#### Success Response
-
-Success-Response:
-
-```
-{
-    "data": {
-        "priceChange": "4.761727644165598",
-        "currentPrice": "3760.8426158182515",
-        "previousPrice": "3589.901293526158"
-    }
-}
-```
-
-#### Success 200
-
-| Name          | Type     | Description                         |
-| ------------- | -------- | ----------------------------------- |
-| priceChange   | `String` | The price change ratio of the token |
-| currentPrice  | `String` | The current price of the token      |
-| previousPrice | `String` | The previous price of the token     |
-
-### Get price change for token over time duration <a href="#user-content-get-price-change-for-token-over-time-duration" id="user-content-get-price-change-for-token-over-time-duration"></a>
-
-[Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
-
-```
-POST /api/v1/pricechange
-```
-
-#### Parameter Parameters
-
-| Name         | Type     | Description                                                                                                                                                                                                                                                                           |
-| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| tokenAddress | `String` | The currency address                                                                                                                                                                                                                                                                  |
-| duration     | `Object` | The duration object to calculate the price change over the timeframe duration should be passed as an object according to [https://day.js.org/docs/en/durations/creating](https://day.js.org/docs/en/durations/creating) for example duration of {days: 1} means a duration of one day |
-
-#### Success Response
-
-Success-Response:
-
-```
-{
-    "data": {
-        "priceChange": "4.761727644165598",
-        "currentPrice": "3760.8426158182515",
-        "previousPrice": "3589.901293526158"
-    }
-}
-```
-
-#### Success 200
-
-| Name          | Type     | Description                         |
-| ------------- | -------- | ----------------------------------- |
-| priceChange   | `String` | The price change ratio of the token |
-| currentPrice  | `String` | The current price of the token      |
-| previousPrice | `Object` | The previous price of the token     |
-
-## Price <a href="#user-content-price" id="user-content-price"></a>
+## Price
 
 ### Get latest price for a token <a href="#user-content-get-latest-price-for-a-token" id="user-content-get-latest-price-for-a-token"></a>
 
 [Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
 
 ```
-GET /api/v1/price
+GET /api/v1/price/:tokenAddress
 ```
 
-#### Parameter Parameters
+#### Parameters - `Parameter`
 
 | Name         | Type     | Description          |
 | ------------ | -------- | -------------------- |
 | tokenAddress | `String` | The currency address |
 
-#### Success Response
+#### Success response
 
-Success-Response:
+**Success response - `Success 200`**
+
+| Name  | Type     | Description            |
+| ----- | -------- | ---------------------- |
+| price | `Number` | The price of the token |
+
+#### Success response example
+
+**Success response example - `Success-Response:`**
 
 ```
 {
@@ -105,11 +38,141 @@ Success-Response:
 }
 ```
 
-#### Success 200
+## PriceChange <a href="#user-content-pricechange" id="user-content-pricechange"></a>
 
-| Name  | Type     | Description            |
-| ----- | -------- | ---------------------- |
-| price | `Number` | The price of the token |
+### Get price change for token over last 24 hours <a href="#user-content-get-price-change-for-token-over-last-24-hours" id="user-content-get-price-change-for-token-over-last-24-hours"></a>
+
+[Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
+
+```
+GET /api/v1/pricechange/:tokenAddress
+```
+
+#### Parameters - `Parameter`
+
+| Name         | Type     | Description          |
+| ------------ | -------- | -------------------- |
+| tokenAddress | `String` | The currency address |
+
+#### Success response
+
+**Success response - `Success 200`**
+
+| Name          | Type     | Description                         |
+| ------------- | -------- | ----------------------------------- |
+| priceChange   | `String` | The price change ratio of the token |
+| currentPrice  | `String` | The current price of the token      |
+| previousPrice | `String` | The previous price of the token     |
+
+#### Success response example
+
+**Success response example - `Success-Response:`**
+
+```
+{
+    "data": {
+        "priceChange": "4.761727644165598",
+        "currentPrice": "3760.8426158182515",
+        "previousPrice": "3589.901293526158"
+    }
+}
+```
+
+### Get price change for token over time duration <a href="#user-content-get-price-change-for-token-over-time-duration" id="user-content-get-price-change-for-token-over-time-duration"></a>
+
+[Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
+
+```
+POST /api/v1/pricechange/:tokenAddress
+```
+
+#### Parameters - `Parameter`
+
+| Name         | Type     | Description          |
+| ------------ | -------- | -------------------- |
+| tokenAddress | `String` | The currency address |
+
+#### Request Body
+
+| Name     | Type     | Description                                                                                                                                                                                                                                                                           |
+| -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| duration | `Object` | The duration object to calculate the price change over the timeFrame duration should be passed as an object according to [https://day.js.org/docs/en/durations/creating](https://day.js.org/docs/en/durations/creating) for example duration of {days: 1} means a duration of one day |
+
+#### Success response
+
+**Success response - `Success 200`**
+
+| Name          | Type     | Description                         |
+| ------------- | -------- | ----------------------------------- |
+| priceChange   | `String` | The price change ratio of the token |
+| currentPrice  | `String` | The current price of the token      |
+| previousPrice | `Object` | The previous price of the token     |
+
+#### Success response example
+
+**Success response example - `Success-Response:`**
+
+```
+{
+    "data": {
+        "priceChange": "4.761727644165598",
+        "currentPrice": "3760.8426158182515",
+        "previousPrice": "3589.901293526158"
+    }
+}
+```
+
+## PriceChangeInterval <a href="#user-content-pricechangeinterval" id="user-content-pricechangeinterval"></a>
+
+### Get price changes over an interval for token <a href="#user-content-get-price-changes-over-an-interval-for-token" id="user-content-get-price-changes-over-an-interval-for-token"></a>
+
+[Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
+
+```
+GET /api/v1/pricechange/interval/:timeFrame/:tokenAddress
+```
+
+#### Parameters - `Parameter`
+
+| Name         | Type     | Description                                                                                  |
+| ------------ | -------- | -------------------------------------------------------------------------------------------- |
+| tokenAddress | `String` | The address of the token                                                                     |
+| timeFrame    | `string` | <p>How far to look back</p><p><em>Allowed values: "ALL","MONTH","WEEK","DAY","HOUR"</em></p> |
+
+#### Query Parameters
+
+| Name     | Type     | Description                                                                                                                                       |
+| -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| interval | `number` | <p><strong>optional</strong></p><p>The chunk in seconds</p><p><em>Default value: 3600</em><br><em>Allowed values: 60,300,1800,3600,86400</em></p> |
+
+#### Success response
+
+**Success response - `Success 200`**
+
+| Name                       | Type       | Description                                                    |
+| -------------------------- | ---------- | -------------------------------------------------------------- |
+| priceChanges               | `Object[]` | List of price changes                                          |
+| priceChanges.timestamp     | `Number`   | The time in seconds at which the price change occurred         |
+| priceChanges.priceChange   | `Number`   | The price change ratio of the token at the specified timestamp |
+| priceChanges.previousPrice | `Number`   | The previous price at the specified timestamp                  |
+| priceChanges.price         | `Number`   | The price at the specified timestamp                           |
+
+#### Success response example
+
+**Success response example - `Success-Response:`**
+
+```
+ {
+   "data": [
+     {
+       "timestamp": 1628542800,
+       "priceChange": 0,
+       "previousPrice": "43935.339297872226",
+       "currentPrice": "43935.339297872226"
+     }
+   ]
+}
+```
 
 ## Stats <a href="#user-content-stats" id="user-content-stats"></a>
 
@@ -118,19 +181,32 @@ Success-Response:
 [Back to top](https://github.com/fuseio/fuseswap-service/blob/master/docs/api.md#top)
 
 ```
-GET /api/v1/stats/:tokenAddress?=limit={limit}
+GET /api/v1/stats/:tokenAddress
 ```
 
-#### Parameter Parameters
+#### Parameters - `Parameter`
 
-| Name         | Type     | Description                                               |
-| ------------ | -------- | --------------------------------------------------------- |
-| tokenAddress | `String` | The currency address                                      |
-| limit        | `String` | The number of days to return statistics for (query param) |
+| Name         | Type     | Description          |
+| ------------ | -------- | -------------------- |
+| tokenAddress | `String` | The currency address |
 
-#### Success Response
+#### Query Parameters
 
-Success-Response:
+| Name  | Type     | Description                                 |
+| ----- | -------- | ------------------------------------------- |
+| limit | `String` | The number of days to return statistics for |
+
+#### Success response
+
+**Success response - `Success 200`**
+
+| Name  | Type       | Description                               |
+| ----- | ---------- | ----------------------------------------- |
+| array | `Object[]` | of token stats objects, see example below |
+
+#### Success response example
+
+**Success response example - `Success-Response:`**
 
 ```
 {
@@ -145,12 +221,6 @@ Success-Response:
 ]
 ```
 
-#### Success 200
-
-| Name  | Type       | Description                               |
-| ----- | ---------- | ----------------------------------------- |
-| array | `Object[]` | of token stats objects, see example below |
-
 ## Swap <a href="#user-content-swap" id="user-content-swap"></a>
 
 ### Create a quote for a token pair <a href="#user-content-create-a-quote-for-a-token-pair" id="user-content-create-a-quote-for-a-token-pair"></a>
@@ -161,7 +231,7 @@ Success-Response:
 POST /api/v1/swap/quote
 ```
 
-#### Parameter Parameters
+#### Request Body
 
 | Name        | Type     | Description                      |
 | ----------- | -------- | -------------------------------- |
@@ -169,9 +239,18 @@ POST /api/v1/swap/quote
 | currencyOut | `String` | The desired currency out address |
 | inputAmount | `String` | The desired amount to spend      |
 
-#### Success Response
+#### Success response
 
-Success-Response:
+**Success response - `Success 200`**
+
+| Name  | Type     | Description                                                                                                |
+| ----- | -------- | ---------------------------------------------------------------------------------------------------------- |
+| info  | `Object` | Simplied quote object containing information about the trade                                               |
+| trade | `Object` | The trade object containing information about the [trade](https://uniswap.org/docs/v2/SDK/trade) e.g price |
+
+#### Success response example
+
+**Success response example - `Success-Response:`**
 
 ```
 {
@@ -607,16 +686,17 @@ Success-Response:
 }
 ```
 
-#### Success 200
+#### Error response
 
-| Name  | Type     | Description                                                                                                |
-| ----- | -------- | ---------------------------------------------------------------------------------------------------------- |
-| info  | `Object` | Simplied quote object containing information about the trade                                               |
-| trade | `Object` | The trade object containing information about the [trade](https://uniswap.org/docs/v2/SDK/trade) e.g price |
+**Error response - `Error 4xx`**
 
-#### Error Response
+| Name  | Type     | Description                             |
+| ----- | -------- | --------------------------------------- |
+| error | `Object` | Object with information about the error |
 
-Error-Response:
+#### Error response example
+
+**Error response example - `Error-Response:`**
 
 ```
  {
@@ -635,7 +715,7 @@ Error-Response:
 POST /api/v1/swap/swapcallparameters
 ```
 
-#### Parameter Parameters
+#### Request Body
 
 | Name            | Type     | Description                                                                                                                                                                                  |
 | --------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -646,9 +726,20 @@ POST /api/v1/swap/swapcallparameters
 | allowedSlippage | `Number` | <p><strong>optional</strong></p><p>How much the execution price is allowed to move unfavorably from the trade execution price in Basis Points(BIPS)</p><p><em>Default value: 50</em><br></p> |
 | ttl             | `Number` | <p><strong>optional</strong></p><p>How long the swap is valid until it expires in seconds</p><p><em>Default value: 1200</em><br></p>                                                         |
 
-#### Success Response
+#### Success response
 
-Success-Response:
+**Success response - `Success 200`**
+
+| Name       | Type       | Description                                                                                                |
+| ---------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
+| methodName | `String`   | The method to call on Fuseswap RouterV2                                                                    |
+| args       | `String[]` | The arguments to pass to the method, all hex encoded                                                       |
+| value      | `String`   | The amount of wei to send in hex                                                                           |
+| rawTxn     | `Object`   | Unsigned transaction which represents the transaction that needs to be signed and submitted to the network |
+
+#### Success response example
+
+**Success response example - `Success-Response:`**
 
 ```
 {
@@ -675,18 +766,17 @@ Success-Response:
 }
 ```
 
-#### Success 200
+#### Error response
 
-| Name       | Type       | Description                                                                                                |
-| ---------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
-| methodName | `String`   | The method to call on Fuseswap RouterV2                                                                    |
-| args       | `String[]` | The arguments to pass to the method, all hex encoded                                                       |
-| value      | `String`   | The amount of wei to send in hex                                                                           |
-| rawTxn     | `Object`   | Unsigned transaction which represents the transaction that needs to be signed and submitted to the network |
+**Error response - `Error 4xx`**
 
-#### Error Response
+| Name  | Type     | Description                             |
+| ----- | -------- | --------------------------------------- |
+| error | `Object` | Object with information about the error |
 
-Error-Response:
+#### Error response example
+
+**Error response example - `Error-Response:`**
 
 ```
  {
@@ -707,9 +797,27 @@ Error-Response:
 GET /api/v1/tokens
 ```
 
-#### Success Response
+#### Success response
 
-Success-Response
+**Success response - `Success 200`**
+
+| Name                           | Type       | Description                                                                                          |
+| ------------------------------ | ---------- | ---------------------------------------------------------------------------------------------------- |
+| tokens                         | `Object[]` | List of tokens                                                                                       |
+| tokens.name                    | `String`   | The name of the token                                                                                |
+| tokens.symbol                  | `String`   | The symbol of the token                                                                              |
+| tokens.decimals                | `Number`   | The number of decimals the token                                                                     |
+| tokens.address                 | `String`   | The address of the token on fuse network                                                             |
+| tokens.underlyingTokens        | `Object[]` | <p><strong>optional</strong></p><p>[lp only] The list of underlying tokens for the lp token type</p> |
+| token.underlyingTokens.address | `String`   | <p><strong>optional</strong></p><p>[lp only] The address of the underlying token</p>                 |
+| token.underlyingTokens.name    | `String`   | <p><strong>optional</strong></p><p>[lp only] The name of the underlying token</p>                    |
+| token.underlyingToken.symbol   | `String`   | <p><strong>optional</strong></p><p>[lp only] The symbol of the underlying token</p>                  |
+| tokens.logoURI                 | `String`   | <p><strong>optional</strong></p><p>The logo url for the token</p>                                    |
+| tokens.type                    | `String`   | <p>The type of token</p><p><em>Allowed values: "misc","bridged","lp"</em></p>                        |
+
+#### Success response example
+
+**Success response example - `Success-Response`**
 
 ```
 {
@@ -754,19 +862,3 @@ Success-Response
    }
 }
 ```
-
-#### Success 200
-
-| Name                           | Type       | Description                                                                                          |
-| ------------------------------ | ---------- | ---------------------------------------------------------------------------------------------------- |
-| tokens                         | `Object[]` | List of tokens                                                                                       |
-| tokens.name                    | `String`   | The name of the token                                                                                |
-| tokens.symbol                  | `String`   | The symbol of the token                                                                              |
-| tokens.decimals                | `Number`   | The number of decimals the token                                                                     |
-| tokens.address                 | `String`   | The address of the token on fuse network                                                             |
-| tokens.underlyingTokens        | `Object[]` | <p><strong>optional</strong></p><p>[lp only] The list of underlying tokens for the lp token type</p> |
-| token.underlyingTokens.address | `String`   | <p><strong>optional</strong></p><p>[lp only] The address of the underlying token</p>                 |
-| token.underlyingTokens.name    | `String`   | <p><strong>optional</strong></p><p>[lp only] The name of the underlying token</p>                    |
-| token.underlyingToken.symbol   | `String`   | <p><strong>optional</strong></p><p>[lp only] The symbol of the underlying token</p>                  |
-| tokens.logoURI                 | `String`   | <p><strong>optional</strong></p><p>The logo url for the token</p>                                    |
-| tokens.type                    | `String`   | <p>The type of token</p><p><em>Allowed values: "misc","bridged","lp"</em></p>                        |
