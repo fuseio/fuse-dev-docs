@@ -1,5 +1,7 @@
 # Admin API
 
+Admin API used to control the economy token and the user funds.
+
 Base URL: [https://studio.fuse.io/](https://studio.fuse.io)
 
 ### Burn tokens
