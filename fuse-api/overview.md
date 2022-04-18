@@ -30,3 +30,8 @@ To use the API key you need to append it to any request in a form of the query p
 
 
 
+### JWT token
+
+Admin JWT key used to control the economy and its a token. The admin API provides a simple way to perform crypto payments without diving in into the web3 technology stack.&#x20;
+
+The JWT key should be stored in a secure way on your servers, and is used for backend to backend communication. Do not share the admin JWT with the client application (web or mobile).
