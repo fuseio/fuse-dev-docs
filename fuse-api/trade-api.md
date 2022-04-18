@@ -1,5 +1,7 @@
 # Trade API
 
+Trade API is used to fetch token prices, statistics, and swap quotes that can be signed by the user and then executor. Is is used the [Voltage DEX](https://voltage.finance) for trading behind the scenes.
+
 Base URL: [https://api.fuseswap.com/](https://api.fuseswap.com)
 
 ## Price
