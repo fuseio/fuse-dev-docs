@@ -13,7 +13,7 @@
 * [Jobs API](fuse-api/jobs-api.md)
 * [Admin API](fuse-api/admin-api.md)
 * [Trade API](fuse-api/trade-api.md)
-* [RPC API](fuse-api/rpc-api.md)
+* [JSON-RPC API](fuse-api/json-rpc-api.md)
 
 ## Fuse Services <a href="#fuse-studio" id="fuse-studio"></a>
 

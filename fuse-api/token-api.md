@@ -1,5 +1,7 @@
 # Token API
 
+Token API is used to fetching tokens details and register new tokens to the platform
+
 Base URL: [https://studio.fuse.io/api/v1](https://studio.fuse.io/api/v1)
 
 ### Adding new token
