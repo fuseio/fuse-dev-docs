@@ -1,7 +1,5 @@
 # Economy API
 
-Economy API is used to interact and manage the economy created on the Fuse Studio.
-
 Base URL: [https://studio.fuse.io/api/v1](https://studio.fuse.io/api/v1)
 
 ### Add foreign token address to community <a href="#user-content-add-foreign-token-address-to-community" id="user-content-add-foreign-token-address-to-community"></a>

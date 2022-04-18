@@ -1,5 +1,7 @@
 # Wallet API
 
+Wallet API is used to create and fetch wallets of the economy users. Wallet is a smart contract proxy wallet that is deployed on the Fuse network. It has an owner which is in charge of wallet, owner is controlling the wallet funds and can perform other various transactions by signing messages and sending them to the relayer.  See [Jobs API](jobs-api.md) to learn about relaying.
+
 Base URL: [https://studio.fuse.io/](https://studio.fuse.io)
 
 ### Create wallet contract for user
