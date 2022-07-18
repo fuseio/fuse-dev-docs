@@ -30,17 +30,17 @@
 
 ### Testnets
 
-Currently, the only available testnet is [Spark](https://explorer.fusespark.io).
+Currently, the only available testnet is [Spark](https://explorer.fusespark.io/).
 
-RPC: [https://rpc.fusespark.io/](https://rpc.fusespark.io)
+RPC: [https://rpc.fusespark.io/](https://rpc.fusespark.io/)
 
 ### DApp Management & Development Tools
 
 [The Graph](https://thegraph.com) supports Fuse data indexing, quierying and display.
 
-[Remix IDE](https://remix-project.org): It's easy to deploy on Fuse with Remix, simply choose injected web3 and add the Fuse custom RPC to your Metamask.
+[Remix IDE](https://remix-project.org/): It's easy to deploy on Fuse with Remix, simply choose injected web3 and add the Fuse custom RPC to your Metamask.
 
-[JustSmartContracts](https://justsmartcontracts.dev): another smart contract deployment tool for EVM chains.&#x20;
+[JustSmartContracts](https://justsmartcontracts.dev/): another smart contract deployment tool for EVM chains.&#x20;
 
 [OpenZeppelin Defender](https://defender.openzeppelin.com): Manage smart contract administration including access controls, upgrades and pausing.
 

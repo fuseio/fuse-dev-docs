@@ -9,7 +9,7 @@ Choosing a owner you are deciding on the custody on the funds. Fuse API provides
 
 It is also possible to mix the modes and migrate the users between the modes. For example a user can start with the custody mode and move to the crypto native mode once the economy manager is sure that users keys are stored in a secure way.
 
-Base URL: [https://studio.fuse.io/](https://studio.fuse.io)
+Base URL: [https://studio.fuse.io/](https://studio.fuse.io/)
 
 ### Create wallet contract for user
 

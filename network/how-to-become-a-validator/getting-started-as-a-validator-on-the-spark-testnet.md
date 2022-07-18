@@ -40,7 +40,7 @@ TESTNET=true
 ```
 
 {% hint style="success" %}
-After running the script successfully, you will see your address in the [health](https://health.fuse.io) site.
+After running the script successfully, you will see your address in the [health](https://health.fuse.io/) site.
 {% endhint %}
 
 ### Step 4: Stake and/or delegate!

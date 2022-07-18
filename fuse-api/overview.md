@@ -2,7 +2,7 @@
 
 Fuse API is an easy to use way to access and perform community-centric payments on the Fuse Network.
 
-To start with an API please go to the [fuse studio](https://studio.fuse.io), sign up and open your economy. Economy is what defines the payment model your community is using. For example you start with choosing a currency that your economy is going to use.
+To start with an API please go to the [fuse studio](https://studio.fuse.io/), sign up and open your economy. Economy is what defines the payment model your community is using. For example you start with choosing a currency that your economy is going to use.
 
 After onboarding and creating a community you can get:
 

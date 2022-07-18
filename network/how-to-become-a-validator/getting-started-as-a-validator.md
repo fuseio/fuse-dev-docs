@@ -37,7 +37,7 @@ set "sudo" on `PERMISSION_PREFIX` if running docker/docker-compose requires root
 ```
 
 {% hint style="success" %}
-After running the script successfully, you will see your address in the [health](https://health.fuse.io) site.
+After running the script successfully, you will see your address in the [health](https://health.fuse.io/) site.
 {% endhint %}
 
 ### Step 5: Stake and/or delegate!
@@ -80,7 +80,7 @@ Use: `0x5c19a95c000000000000000000000000b8ce4a040e8aa33bbe2de62e92851b7d7afd52de
 Wait until the next cycle is started.
 
 {% hint style="success" %}
-You can see that you are validating both in the [health](https://health.fuse.io) site and on the [explorer](https://explorer.fuse.io) site.
+You can see that you are validating both in the [health](https://health.fuse.io/) site and on the [explorer](https://explorer.fuse.io) site.
 {% endhint %}
 
 For live support, contact us on [Telegram](https://t.me/fuseio) or [Discord](https://discord.gg/tz7ArR). Good luck and happy validating!

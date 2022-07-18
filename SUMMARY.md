@@ -41,6 +41,8 @@
   * [Upgrade Guide (explorer nodes)](network/network-upgrades/upgrade-guide-explorer-nodes.md)
   * [Block 13,800,000 Fork](network/network-upgrades/block-13-800-000-fork.md)
   * [FIP's](network/network-upgrades/fips.md)
+  * [Voting with Snapshot](network/network-upgrades/voting-with-snapshot/README.md)
+    * [Snapshot Decentralized Voting System at Fuse](network/network-upgrades/voting-with-snapshot/snapshot-decentralized-voting-system-at-fuse.md)
 
 ## Important Smart Contracts
 

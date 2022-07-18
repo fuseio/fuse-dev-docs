@@ -8,13 +8,13 @@ This guide will walk you trough running your own validator node using a docker i
 
 ### Pre-Requisites
 
-A complete [Docker](https://docs.docker.com) environment is needed to be installed on your system, as well as [Docker-Compose](https://docs.docker.com/compose/)
+A complete [Docker](https://docs.docker.com/) environment is needed to be installed on your system, as well as [Docker-Compose](https://docs.docker.com/compose/)
 
 Make sure that your user is added to the `docker` user-group on _Unix_ systems, if you can't access root permissions to run containers.
 
 ### Hardware
 
-_Note: specified for_ [_Microsoft Azure_](https://portal.azure.com)_, but similar on other providers as well_
+_Note: specified for_ [_Microsoft Azure_](https://portal.azure.com/)_, but similar on other providers as well_
 
 **Bootnode, Node or Explorer Node**
 
@@ -78,7 +78,7 @@ Follow the instructions emitted by the script.
 
 The following instructions explain how to start a local node with the _Docker_ image.
 
-In fact it uses a pre-configured [Parity Ethereum](https://www.parity.io) client, combined with a set-up wrapper, to make connecting as easy as possible.
+In fact it uses a pre-configured [Parity Ethereum](https://www.parity.io/) client, combined with a set-up wrapper, to make connecting as easy as possible.
 
 The image is prepared to be used as node, validator or explorer node.
 
@@ -272,7 +272,7 @@ $ docker-compose up \
 
 If you have no existing account or a new one should be created anyway, _Parity_ could be used to do so.
 
-Please consider other options like [MetaMask](https://metamask.io) or any other (online) wallet tool.
+Please consider other options like [MetaMask](https://metamask.io/) or any other (online) wallet tool.
 
 In relation to the instructions for the [validator](https://github.com/fuseio/fuse-network/blob/master/README.md#validator) role, we use the folder called `config` to bind as _Docker_ volume to _Parity_.
 
@@ -312,7 +312,7 @@ $ docker run \
 
 _**Note**_
 
-All roles should also run a [Ethereum Network Intelligence API](https://github.com/fuseio/eth-net-intelligence-api) app as well, in order to connect themselves as part of the network and be viewed by the [health](https://health.fuse.io) service
+All roles should also run a [Ethereum Network Intelligence API](https://github.com/fuseio/eth-net-intelligence-api) app as well, in order to connect themselves as part of the network and be viewed by the [health](https://health.fuse.io/) service
 
 ```
 $ docker run \

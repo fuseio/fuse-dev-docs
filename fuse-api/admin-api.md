@@ -6,7 +6,7 @@ With the admin API the developer can mint, burn and transfer tokens between the 
 
 It is possible to use the Admin API only in the custody mode (see [Wallet API](wallet-api.md)).
 
-Base URL: [https://studio.fuse.io/](https://studio.fuse.io)
+Base URL: [https://studio.fuse.io/](https://studio.fuse.io/)
 
 ### Burn tokens
 

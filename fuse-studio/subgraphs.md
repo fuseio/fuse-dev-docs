@@ -4,11 +4,11 @@ description: >-
   Network
 ---
 
-# Subgraphs
+# TheGraph
 
 ## Deploying your own subgraph
 
-TheGraph, a decentralized protocol for indexing and querying chain data, supports the Fuse Netork.Go to [https://thegraph.com/](https://thegraph.com) to sign up and create your subgraph.
+TheGraph, a decentralized protocol for indexing and querying chain data, supports the Fuse Netork.Go to [https://thegraph.com/](https://thegraph.com/) to sign up and create your subgraph.
 
 * Follow the instructions for how to deploy the subgraph
 * in `subgraph.yaml`, the network name should be `fuse`

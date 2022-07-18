@@ -4,7 +4,7 @@ Jobs API is used to fetch and interact with the issued jobs. Job is a unit of wo
 
 Since it takes a couple of seconds to confirm a blockchain transaction, the transaction is wrapped in a job. The job issuer gets a jobId and can check the job's status. He can also retry the job in case it failed. Jobs are used extensively in the [Admin API](admin-api.md).
 
-Base URL: [https://studio.fuse.io/](https://studio.fuse.io)
+Base URL: [https://studio.fuse.io/](https://studio.fuse.io/)
 
 ### Fetch job by correlationId
 
