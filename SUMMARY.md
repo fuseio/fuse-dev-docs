@@ -56,7 +56,3 @@
   * [Ethereum ↔ Fuse Native](important-smart-contracts/bridges/eth-fuse-native-bridge.md)
 * [Fuse Dollar](important-smart-contracts/fuse-dollar.md)
 * [Major Deployed Contracts](important-smart-contracts/major-deployed-contracts.md)
-
-## Fuse Wallet
-
-* [Getting Started](fuse-wallet/getting-started.md)
