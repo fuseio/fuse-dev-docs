@@ -4,24 +4,20 @@
 * [Network Details](network-details.md)
 * [Developer Resources & Tools](developer-resources-and-tools.md)
 
-## Fuse API
+## Legacy Studio API - Deprecated
 
-* [Overview](fuse-api/overview.md)
-* [Token API](fuse-api/token-api.md)
-* [Economy API](fuse-api/economy-api.md)
-* [Wallet API](fuse-api/wallet-api.md)
-* [Jobs API](fuse-api/jobs-api.md)
-* [Admin API](fuse-api/admin-api.md)
-* [Trade API](fuse-api/trade-api.md)
-* [JSON-RPC API](fuse-api/json-rpc-api.md)
+* [Overview](legacy-studio-api-deprecated/overview.md)
+* [Token API](legacy-studio-api-deprecated/token-api.md)
+* [Economy API](legacy-studio-api-deprecated/economy-api.md)
+* [Wallet API](legacy-studio-api-deprecated/wallet-api.md)
+* [Jobs API](legacy-studio-api-deprecated/jobs-api.md)
+* [Admin API](legacy-studio-api-deprecated/admin-api.md)
+* [Trade API](legacy-studio-api-deprecated/trade-api.md)
+* [JSON-RPC API](legacy-studio-api-deprecated/json-rpc-api.md)
 
 ## Fuse Services <a href="#fuse-studio" id="fuse-studio"></a>
 
-* [Fuse Studio](fuse-studio/fuse-studio.md)
 * [TheGraph](fuse-studio/subgraphs.md)
-* [Earn SDK](fuse-studio/earn-sdk/README.md)
-  * [SingleRewardProgram](fuse-studio/earn-sdk/singlerewardprogram.md)
-  * [MultiRewardProgram](fuse-studio/earn-sdk/multirewardprogram.md)
 * [WalletConnect on Fuse](fuse-studio/walletconnect-on-fuse.md)
 
 ## Network
