@@ -2,11 +2,6 @@
 
 * [Introduction](README.md)
 
-## Fuse Services <a href="#fuse-studio" id="fuse-studio"></a>
-
-* [TheGraph](fuse-studio/subgraphs.md)
-* [WalletConnect on Fuse](fuse-studio/walletconnect-on-fuse.md)
-
 ## Network
 
 * [How to run network nodes](network/how-to-run-network-nodes.md)
