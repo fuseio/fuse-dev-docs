@@ -1,8 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Network Details](network-details.md)
-* [Developer Resources & Tools](developer-resources-and-tools.md)
 
 ## Fuse Services <a href="#fuse-studio" id="fuse-studio"></a>
 
