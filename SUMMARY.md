@@ -22,19 +22,6 @@
   * [Voting with Snapshot](network/network-upgrades/voting-with-snapshot/README.md)
     * [Snapshot Decentralized Voting System at Fuse](network/network-upgrades/voting-with-snapshot/snapshot-decentralized-voting-system-at-fuse.md)
 
-## Important Smart Contracts
-
-* [Fuse Token](important-smart-contracts/fuse-token.md)
-* [Bridges](important-smart-contracts/bridges/README.md)
-  * [Ethereum ↔ Fuse GoodDollar Token](important-smart-contracts/bridges/ethereum-fuse-gooddollar-token.md)
-  * [Ethereum ↔ Fuse ERC20 Tokens](important-smart-contracts/bridges/eth-fuse-erc20-bridge.md)
-  * [BSC ↔ Fuse BNB](important-smart-contracts/bridges/bsc-fuse-bnb-bridge.md)
-  * [BSC ↔ Fuse Native](important-smart-contracts/bridges/bsc-fuse-native.md)
-  * [BSC  ↔ Fuse ERC20](important-smart-contracts/bridges/bsc-fuse-erc20-bridge.md)
-  * [Ethereum ↔ Fuse Native](important-smart-contracts/bridges/eth-fuse-native-bridge.md)
-* [Fuse Dollar](important-smart-contracts/fuse-dollar.md)
-* [Major Deployed Contracts](important-smart-contracts/major-deployed-contracts.md)
-
 ## Legacy Studio API - Deprecated
 
 * [Overview](fuse-api/overview.md)
