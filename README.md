@@ -1,23 +1,17 @@
-# Introduction
+# Overview
 
-This is the developer-focused documentation portal for the Fuse platform. More high-level documentation for Fuse is available [here](https://docs.fuse.io).&#x20;
+Fuse API is an easy to use way to access and perform community-centric payments on the Fuse Network.
 
-Fuse is a decentralized blockchain-powered platform and technology stack whose goal is to enable genuine mass adoption of crypto payments and decentralized finance (DeFi).&#x20;
+To start with an API please go to the [fuse studio](https://studio.fuse.io/), sign up and open your economy. Economy is what defines the payment model your community is using. For example you start with choosing a currency that your economy is going to use.
 
-Its main components are the Fuse Network [blockchain](https://docs.fuse.io/general/fuse-network-blockchain), the mobile-centric [infrastructure](https://docs.fuse.io/general/fuse-infrastructure) for seamless creation of token communities and a set of reference decentralized finance (DeFi) [tools](./#fuse-services).
+After onboarding and creating a community you can get:
 
-## Fuse Network
-
-The EVM-compatible Fuse Network blockchain is the foundation of the Fuse platform. The information on this portal will help you:
-
-* Learn how to [run various network nodes](https://developers.fuse.io/fuse-dev-docs/network/how-to-run-network-nodes)
-* Learn how to [become a validator](https://developers.fuse.io/fuse-dev-docs/network/how-to-become-a-validator)
-* Learn about [Fuse Consensus](https://developers.fuse.io/fuse-dev-docs/network/how-to-become-a-validator) and how to participate in it
-* Learn about [network upgrades](https://developers.fuse.io/fuse-dev-docs/network/network-upgrades) and how to implement them
+* API key to start using various Fuse API's
+* JWT to access the[ Admin API](fuse-api/admin-api.md)
 
 ## Fuse API
 
-Fuse provide a bundle of API's to access and perform community-centric payments on the Fuse Network. Most of the API do require an economy set up on Fuse Studio.
+Fuse provide a bundle of API's to access and perform community-centric payments on the Fuse Network. Most of the API do require a economy set up on Fuse Studio.
 
 * [Token API](fuse-api/token-api.md) - fetching economy tokens
 * [Economy API](fuse-api/economy-api.md) - accessing and manipulating the economy details
@@ -26,39 +20,18 @@ Fuse provide a bundle of API's to access and perform community-centric payments 
 * [Admin API ](fuse-api/jobs-api.md)- performing community payments.
 * [Trade API](fuse-api/trade-api.md) - trading tokens and executing swaps
 
-## Fuse Services
+### API Key
 
-Fuse offers application developers several backend services that expose APIs that can be used by anyone seeking to build on Fuse. Although some functionalities do require a dedicated API key or access token.
+The API key is used to access the Fuse API without a limit. The API key is associated with the economy you created on Fuse Studio. The key can be stored either on the client and server side, and does not need to be secured as its not used for authorization but merely for measurement  on quotas and metrics.
 
-### Fuse Studio
+To use the API key you need to append it to any request in a form of the query parameter `apiKey={YOUR_KEY}`.  For example, the URL for fetching a community should look like:
 
-Fuse Studio is the platform for creating, building and managing economies. The Fuse Studio playground [interface](https://studio.fuse.io) enables the creation and management of token communities without coding but for more sophisticated use cases [Fuse API](./#fuse-api) is available.
-
-### Trading Service
-
-Voltage Finance is the first Fuse-native decentralized exchange (DEX). The Fuse team makes available an auxiliary [service](https://developers.fuse.io/fuse-dev-docs/fuse-studio/fuseswap-service) to query prices and stats on it.
-
-### The Graph
-
-Fuse's integration with The Graph enables the indexing of smart contract transactions on Fuse Network through the creation of [subgraphs](https://thegraph.academy/developers/defining-a-subgraph/). The Fuse team maintains a set of [Fuse subgraphs](https://developers.fuse.io/fuse-dev-docs/fuse-studio/subgraphs) that can also be used by external developers.&#x20;
-
-### Earn SDK
-
-[Earn SDK](https://developers.fuse.io/fuse-dev-docs/fuse-studio/earn-sdk) is a client-server SDK for building applications that can interact with various earning functionalities on Fuse.
+`https://studio.fuse.io/api/v1/communities/:communityAddress?apiKey={YOUR_KEY}`
 
 
 
-## Important Smart Contracts
+### JWT token
 
-Certain smart contracts on Fuse Network and other EVM-compatible chains may be useful for application developers building on top of Fuse. These include:
+Admin JWT key used to control the economy and its a token. The admin API provides a simple way to perform crypto payments without diving in into the web3 technology stack.&#x20;
 
-* The [contracts](https://developers.fuse.io/fuse-dev-docs/important-smart-contracts/fuse-token) for the Fuse Token on other chains
-* The [smart contracts](https://developers.fuse.io/fuse-dev-docs/important-smart-contracts/bridges) for Fuse bridges
-* The [FuseDollar contracts](https://developers.fuse.io/fuse-dev-docs/important-smart-contracts/fuse-dollar)
-
-## Fuse Wallet
-
-The Fuse team has developed an open-cource, easily forkable and customizable mobile crypto wallet that developers can use to create wallets to serve as frontends for the token communities created via the Studio.
-
-[Learn](https://developers.fuse.io/fuse-dev-docs/fuse-wallet/getting-started) how to run the wallet and customize it by forking.
-
+The JWT key should be stored in a secure way on your servers, and is used for backend to backend communication. Do not share the admin JWT with the client application (web or mobile).
